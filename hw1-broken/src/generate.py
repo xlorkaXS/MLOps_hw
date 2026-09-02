@@ -2,14 +2,15 @@
 
 from src.config import load_params
 from src.model import generate, load_model
+import torch
 
 
 def main() -> None:
     params = load_params()
-    # TODO: зафиксировать seed — сейчас прогоны не воспроизводятся
-
+    torch.manual_seed(params["generate"]["seed"])
+    
     tokenizer, model = load_model(params)
-    print(f"Модель: Qwen/Qwen3-0.6B")
+    print(f"Модель: {params['model']['name']}")
     text, n_tokens = generate(tokenizer, model, params, params["bench"]["prompt"])
 
     print(text)
