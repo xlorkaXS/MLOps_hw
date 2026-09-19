@@ -1,18 +1,18 @@
 {
-  "version": "v1",
+  "version": "v2",
   "source": "source/exoplanets.csv",
   "rows_scanned": 6366,
-  "rows_written": 2000,
+  "rows_written": 4000,
   "skipped_missing_identity": 0,
   "skipped_duplicate_planet": 0,
   "skipped_no_valid_fact": 0,
   "question_types": {
-    "discovery": 315,
-    "distance": 324,
-    "mass": 347,
-    "period": 285,
-    "radius": 377,
-    "temperature": 352
+    "discovery": 639,
+    "distance": 683,
+    "mass": 711,
+    "period": 565,
+    "radius": 703,
+    "temperature": 699
   },
   "system_prompt_variants": 5,
   "seconds": 0.03

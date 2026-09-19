@@ -1,20 +1,20 @@
 {
-  "version": "v1",
-  "examples": 1992,
+  "version": "v2",
+  "examples": 3972,
   "system_prompts": 5,
-  "groups": 1771,
+  "groups": 3250,
   "largest_group": "звёздная система hd 10180",
-  "largest_group_share": 0.0025,
+  "largest_group_share": 0.0015,
   "answer_len": {
     "p10": 44,
-    "p50": 60,
-    "p90": 105,
-    "ratio_p90_p10": 2.39,
-    "cv": 0.353,
+    "p50": 90,
+    "p90": 106,
+    "ratio_p90_p10": 2.41,
+    "cv": 0.351,
     "min": 37,
     "max": 132
   },
-  "same_length_share": 0.0663,
+  "same_length_share": 0.0712,
   "duplicate_answer_share": 0.0,
   "thresholds": {
     "min_examples": 1000,
@@ -27,5 +27,5 @@
   },
   "violations": [],
   "passed": true,
-  "seconds": 0.02
+  "seconds": 0.05
 }

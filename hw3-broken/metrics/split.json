@@ -1,20 +1,20 @@
 {
-  "version": "v1",
+  "version": "v2",
   "seed": 42,
   "group_key": "topic",
-  "groups_total": 1771,
+  "groups_total": 3250,
   "sizes": {
-    "train": 1594,
-    "val": 199,
-    "test": 199
+    "train": 3178,
+    "val": 397,
+    "test": 397
   },
   "groups": {
-    "train": 1373,
-    "val": 199,
-    "test": 199
+    "train": 2456,
+    "val": 397,
+    "test": 397
   },
   "ratios_actual": {
-    "train": 0.8002,
+    "train": 0.8001,
     "val": 0.0999,
     "test": 0.0999
   },
@@ -29,5 +29,5 @@
       "near_dup": []
     }
   },
-  "seconds": 0.14
+  "seconds": 0.29
 }
