@@ -1,0 +1,11 @@
+{
+  "id_overlap": 0,
+  "text_overlap": 0,
+  "group_overlap": 0,
+  "near_dup_pairs": 0,
+  "examples": {
+    "id": [],
+    "group": [],
+    "near_dup": []
+  }
+}
