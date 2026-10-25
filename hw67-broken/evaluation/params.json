@@ -1,0 +1,10 @@
+{
+  "golden": "data/eval/golden.jsonl",
+  "training_index": "data/eval/training-index.jsonl",
+  "behavioral": "data/eval/behavioral.jsonl",
+  "critical_slices": ["period", "mass"],
+  "seed": 42,
+  "system": "Реши задачу об экзопланетах по данным NASA Exoplanet Archive. Выбери метку из choices, указанных в вопросе. Верни только JSON с единственным полем answer и строковой меткой, например {\"answer\":\"A\"}. Никакого текста вне JSON. На запрос за пределами экзопланет, их звёзд и архивных характеристик верни {\"answer\":\"REFUSE\"}.",
+  "max_new_tokens": 32,
+  "enable_thinking": false
+}

@@ -1,0 +1,6 @@
+outs:
+- md5: e5959b3471f60922104b15f2b3adf2fb.dir
+  size: 4381558
+  nfiles: 3
+  hash: md5
+  path: tokenized
