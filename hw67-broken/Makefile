@@ -10,7 +10,7 @@ sweep:
 promote:
 	uv run python -m evaluation.cli promote
 predict:
-	uv run python -m src.predict --uri models:/my-qwen-adapter@champion --prompt "Какой показатель отражает запасы железа?"
+	uv run python -m src.predict --uri models:/exoplanets-qwen-adapter@candidate --prompt "Каков орбитальный период экзопланеты Kepler-17 b?"
 check:
 	bash tests/check.sh
 check-storage:
@@ -35,4 +35,4 @@ check-all: check check-eval
 baseline-update:
 	uv run python -m evaluation.cli baseline-update
 predict-candidate:
-	uv run python -m src.predict --uri models:/my-qwen-adapter@candidate --prompt "Выберите правильный вариант."
+	uv run python -m src.predict --uri models:/exoplanets-qwen-adapter@candidate --prompt "Каков радиус экзопланеты Kepler-44 b?"
