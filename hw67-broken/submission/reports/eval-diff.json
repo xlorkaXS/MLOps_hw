@@ -1,0 +1,15 @@
+{
+  "improved": [
+    "gold-exo-1940654b84926ee32f98",
+    "gold-exo-09544dc738bba460f625"
+  ],
+  "regressed": [
+    "gold-exo-03e6bf41c875c0de3891",
+    "gold-exo-08ab0cf3597c218b6575",
+    "gold-exo-08abd7d2562a2d0f869f",
+    "gold-exo-0e63e1f45f763f99db2a",
+    "gold-exo-106eab7297c845ac7bd2",
+    "gold-exo-124efaab82df9f0401d7",
+    "gold-exo-128369b42d7ef5b40a0f"
+  ]
+}

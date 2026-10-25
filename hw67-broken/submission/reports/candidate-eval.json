@@ -1,0 +1,800 @@
+{
+  "overall": {
+    "n": 50,
+    "correct": 18,
+    "valid": 50,
+    "errors": 0,
+    "accuracy": 0.36,
+    "format_rate": 1.0
+  },
+  "per_item": [
+    {
+      "id": "gold-exo-0073295c8be1275bb283",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-02b8c3ccaab18843f9cf",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-0b9f369ec77482056893",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-0ce5239c3cc8f5a5339c",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-101aa486963cf12f9e29",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-118f96df969fb24f9a59",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-1940654b84926ee32f98",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-21f7d34e4576dc8d4243",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-25812eb9926859331617",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-287611b8cc6715317bca",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "period"
+      ]
+    },
+    {
+      "id": "gold-exo-02344e86141cd28fa10d",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-03b48f6482f21549ccac",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-03e6bf41c875c0de3891",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-09544dc738bba460f625",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-099529b1bab47f721129",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-0b0d5f6b0c9948be7ec8",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-0ddaa73734050f1abe02",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-1191883ef6f45f6234b2",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-153fc67d73b0898d5590",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-16828a4d32fdee1e9f4b",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "radius"
+      ]
+    },
+    {
+      "id": "gold-exo-00de2f76fb83e36fab0b",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-014576e2dbeefc29c0d3",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-046e870f7bdc64791ac9",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-0860ff2a4d014add5641",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-08ab0cf3597c218b6575",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-08abd7d2562a2d0f869f",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-0a6121e1827cdb959be6",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-0d3f1ddf3ab27d136c4d",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-0e63e1f45f763f99db2a",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-0fd9d1953a64276bfa78",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "mass"
+      ]
+    },
+    {
+      "id": "gold-exo-00f2d39590b9bad8b368",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-02773e7ad88e7774ccf1",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-064304513d06da44afd4",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-080f3d576ab73d38585e",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-0e9c7070dd60f33ac013",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-106eab7297c845ac7bd2",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-11dbb883448766a82608",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-124efaab82df9f0401d7",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-128369b42d7ef5b40a0f",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-1297dc787b2f4038dadf",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "distance"
+      ]
+    },
+    {
+      "id": "gold-exo-0196baa76a813b4795e3",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-02a45fddea87c321384f",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-053ae00044d9c7b3e4db",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-0627a801706ea03f2dc7",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-07c04874267ede394962",
+      "raw": "{\"answer\":\"C\"}",
+      "parsed": {
+        "answer": "C"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-0a123d383acd67e5d598",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-0be80bb3504157f32e5f",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-133ca9bd448cd92b2515",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-1437218da256a12b227e",
+      "raw": "{\"answer\":\"B\"}",
+      "parsed": {
+        "answer": "B"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    },
+    {
+      "id": "gold-exo-1529278f4bd64527af77",
+      "raw": "{\"answer\":\"A\"}",
+      "parsed": {
+        "answer": "A"
+      },
+      "valid": true,
+      "correct": true,
+      "error": null,
+      "slices": [
+        "temperature"
+      ]
+    }
+  ],
+  "slices": {
+    "distance": {
+      "n": 10,
+      "correct": 3,
+      "valid": 10,
+      "errors": 0,
+      "accuracy": 0.3,
+      "format_rate": 1.0
+    },
+    "mass": {
+      "n": 10,
+      "correct": 2,
+      "valid": 10,
+      "errors": 0,
+      "accuracy": 0.2,
+      "format_rate": 1.0
+    },
+    "period": {
+      "n": 10,
+      "correct": 5,
+      "valid": 10,
+      "errors": 0,
+      "accuracy": 0.5,
+      "format_rate": 1.0
+    },
+    "radius": {
+      "n": 10,
+      "correct": 2,
+      "valid": 10,
+      "errors": 0,
+      "accuracy": 0.2,
+      "format_rate": 1.0
+    },
+    "temperature": {
+      "n": 10,
+      "correct": 6,
+      "valid": 10,
+      "errors": 0,
+      "accuracy": 0.6,
+      "format_rate": 1.0
+    }
+  },
+  "status": "complete",
+  "model": {
+    "kind": "adapter",
+    "name": "exoplanets-qwen-adapter",
+    "version": "1",
+    "run_id": "13588a225efa4f649fc1f93857be6cc8",
+    "uri": "models:/exoplanets-qwen-adapter/1"
+  },
+  "protocol_sha256": "f6660de294520d99a574f039e2cd02032bc7adb95c60bdf54416613c0e7edc42",
+  "golden_sha256": "39b10887ffbe8db5088c6a33df7cc3d373c4377f8133567bd6a3d5d850f5cfb4",
+  "baseline_spec_sha256": "f71269b95f6b4e1e160fa25e9af6c973517cfebad15880b75b56c8184680b163",
+  "behavioral": {
+    "overall": {
+      "n": 3,
+      "correct": 1,
+      "valid": 3,
+      "errors": 0,
+      "accuracy": 0.3333333333333333,
+      "format_rate": 1.0
+    },
+    "per_item": [
+      {
+        "id": "behavior-format",
+        "raw": "{\"answer\":\"A\"}",
+        "parsed": {
+          "answer": "A"
+        },
+        "valid": true,
+        "correct": false,
+        "error": null,
+        "slices": [
+          "period"
+        ]
+      },
+      {
+        "id": "behavior-paraphrase",
+        "raw": "{\"answer\":\"C\"}",
+        "parsed": {
+          "answer": "C"
+        },
+        "valid": true,
+        "correct": false,
+        "error": null,
+        "slices": [
+          "radius"
+        ]
+      },
+      {
+        "id": "behavior-refusal",
+        "raw": "{\"answer\":\"REFUSE\"}",
+        "parsed": {
+          "answer": "REFUSE"
+        },
+        "valid": true,
+        "correct": true,
+        "error": null,
+        "slices": [
+          "out_of_domain"
+        ]
+      }
+    ],
+    "slices": {
+      "out_of_domain": {
+        "n": 1,
+        "correct": 1,
+        "valid": 1,
+        "errors": 0,
+        "accuracy": 1.0,
+        "format_rate": 1.0
+      },
+      "period": {
+        "n": 1,
+        "correct": 0,
+        "valid": 1,
+        "errors": 0,
+        "accuracy": 0.0,
+        "format_rate": 1.0
+      },
+      "radius": {
+        "n": 1,
+        "correct": 0,
+        "valid": 1,
+        "errors": 0,
+        "accuracy": 0.0,
+        "format_rate": 1.0
+      }
+    }
+  },
+  "leakage": {
+    "exact_or_group_intersections": 0,
+    "n_train_index": 3178,
+    "n_golden": 50,
+    "n_behavioral": 3
+  },
+  "outputs_sha256": "1486835288179c67e4e7fae609508a1575e06d6d73d906239b4c0a3788ebb9bb",
+  "evaluation_run_id": "9e80edbd58c4411c8f5d6d3769779e0e"
+}

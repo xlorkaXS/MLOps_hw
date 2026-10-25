@@ -1,0 +1,7 @@
+{
+  "kind": "adapter",
+  "name": "exoplanets-qwen-adapter",
+  "version": "1",
+  "run_id": "13588a225efa4f649fc1f93857be6cc8",
+  "uri": "models:/exoplanets-qwen-adapter/1"
+}
