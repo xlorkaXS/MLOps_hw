@@ -1,0 +1,242 @@
+{
+  "id": 1,
+  "panels": [
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95,sum by (le,pod)(rate(lab_ttfc_seconds_bucket[30s])))",
+          "refId": "A"
+        }
+      ],
+      "title": "TTFC p95 by Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 2,
+      "options": {},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95,sum by (le,pod)(rate(lab_total_seconds_bucket[30s])))",
+          "refId": "A"
+        }
+      ],
+      "title": "Full response p95 by Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 3,
+      "options": {},
+      "targets": [
+        {
+          "expr": "lab_running",
+          "refId": "A"
+        },
+        {
+          "expr": "lab_waiting",
+          "refId": "B"
+        }
+      ],
+      "title": "Running and waiting per Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 4,
+      "options": {},
+      "targets": [
+        {
+          "expr": "sum by(pod)(rate(lab_requests_total{outcome=\"completed\"}[30s]))",
+          "refId": "A"
+        }
+      ],
+      "title": "Completed per second per Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "id": 5,
+      "options": {},
+      "targets": [
+        {
+          "expr": "sum by(outcome)(rate(lab_requests_total{outcome!=\"completed\"}[30s]))",
+          "refId": "A"
+        }
+      ],
+      "title": "Refusals and aborts per second",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "id": 6,
+      "options": {},
+      "targets": [
+        {
+          "expr": "sum by(pod)(rate(container_cpu_usage_seconds_total{container=\"api\",pod=~\"hw11-.*\"}[30s]))",
+          "refId": "A"
+        }
+      ],
+      "title": "CPU cores per Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bytes"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      },
+      "id": 7,
+      "options": {},
+      "targets": [
+        {
+          "expr": "sum by(pod)(container_memory_working_set_bytes{container=\"api\",pod=~\"hw11-.*\"})",
+          "refId": "A"
+        }
+      ],
+      "title": "RAM working set per Pod",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hw11-prom"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      },
+      "id": 8,
+      "options": {},
+      "targets": [
+        {
+          "expr": "kube_deployment_status_replicas_ready{deployment=\"hw11\"}",
+          "refId": "A"
+        }
+      ],
+      "title": "Ready replicas",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 41,
+  "time": {
+    "from": "now-30m",
+    "to": "now"
+  },
+  "title": "HW11 \u2022 CPU simulator",
+  "uid": "hw11",
+  "version": 2
+}

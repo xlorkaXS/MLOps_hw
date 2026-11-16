@@ -1,0 +1,36 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  18.43kB
+Step 1/9 : FROM python:3.12.12-slim-bookworm@sha256:593bd06efe90efa80dc4eee3948be7c0fde4134606dd40d8dd8dbcade98e669c
+ ---> 593bd06efe90
+Step 2/9 : WORKDIR /app
+ ---> Using cache
+ ---> 36b0f01c1a16
+Step 3/9 : COPY requirements.txt .
+ ---> Using cache
+ ---> f4c61c446f4c
+Step 4/9 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 7b49914fa6e2
+Step 5/9 : COPY api.py load.py ./
+ ---> bf4814a29153
+Step 6/9 : ENV PYTHONUNBUFFERED=1
+ ---> Running in 0e6d6f847a41
+ ---> Removed intermediate container 0e6d6f847a41
+ ---> d0203f718ea3
+Step 7/9 : USER 65532:65532
+ ---> Running in e871eaaef00c
+ ---> Removed intermediate container e871eaaef00c
+ ---> cd21e24fa6e1
+Step 8/9 : EXPOSE 8091
+ ---> Running in cac5e0c8a2f9
+ ---> Removed intermediate container cac5e0c8a2f9
+ ---> 37f2f345f94e
+Step 9/9 : CMD ["python", "-m", "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8091", "--timeout-graceful-shutdown", "35"]
+ ---> Running in 33f319ebdc84
+ ---> Removed intermediate container 33f319ebdc84
+ ---> 78a05c009ba3
+Successfully built 78a05c009ba3
+Successfully tagged hw11-api:1.0.0

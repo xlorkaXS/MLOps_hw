@@ -1,0 +1,104 @@
+{{- $model := dict "model_id" (printf "sim-%s" .Values.modelVersion) | toJson }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hw11-model-{{ $model | sha256sum | trunc 12 }}
+immutable: true
+data:
+  model.json: {{ $model | quote }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw11
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels: {app: hw11}
+  minReadySeconds: 1
+  progressDeadlineSeconds: 80
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: {maxSurge: 1, maxUnavailable: 0}
+  template:
+    metadata:
+      labels: {app: hw11}
+    spec:
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: {{ .Values.graceSeconds }}
+      containers:
+      - name: api
+        image: {{ .Values.image | quote }}
+        imagePullPolicy: Never
+        ports: [{name: http, containerPort: 8091}]
+        env:
+        - {name: WARMUP_SECONDS, value: {{ .Values.warmup | quote }}}
+        - {name: NEVER_READY, value: {{ .Values.neverReady | quote }}}
+        - {name: MODEL_SHA256, value: {{ $model | sha256sum | quote }}}
+        - {name: CONCURRENT, value: {{ .Values.concurrent | quote }}}
+        - {name: QUEUE_LIMIT, value: {{ .Values.queueLimit | quote }}}
+        - {name: CACHE_LIMIT, value: {{ .Values.cacheLimit | quote }}}
+        - {name: HIT_SECONDS, value: {{ .Values.hitSeconds | quote }}}
+        - {name: MISS_SECONDS, value: {{ .Values.missSeconds | quote }}}
+        resources:
+          requests: {cpu: {{ .Values.cpuRequest }}, memory: {{ .Values.ramRequest }}}
+          limits: {cpu: {{ .Values.cpuLimit }}, memory: {{ .Values.ramLimit }}}
+        volumeMounts: [{name: model, mountPath: /model, readOnly: true}]
+        startupProbe:
+          httpGet: {path: {{ ternary "/health" "/startup" .Values.prematureProbes }}, port: http}
+          periodSeconds: 1
+          timeoutSeconds: 1
+          failureThreshold: 65
+        readinessProbe:
+          httpGet: {path: {{ ternary "/health" "/ready" .Values.prematureProbes }}, port: http}
+          periodSeconds: 1
+          timeoutSeconds: 1
+          failureThreshold: 1
+        livenessProbe:
+          httpGet: {path: /live, port: http}
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+        lifecycle:
+          preStop:
+            exec:
+              command: ["python","-c","import urllib.request,time; time.sleep(3); urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8091/internal/drain',method='POST'),timeout=2).close(); time.sleep(1)"]
+      volumes:
+      - name: model
+        configMap:
+          name: hw11-model-{{ $model | sha256sum | trunc 12 }}
+---
+{{- range $name, $affinity := dict "plain" "None" "sticky" "ClientIP" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: hw11-{{ $name }}
+spec:
+  selector: {app: hw11}
+  ports: [{name: http, port: 8091, targetPort: http}]
+  sessionAffinity: {{ $affinity }}
+  {{- if eq $affinity "ClientIP" }}
+  sessionAffinityConfig:
+    clientIP: {timeoutSeconds: 10800}
+  {{- end }}
+---
+{{- end }}
+{{- if .Values.hpa }}
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hw11
+spec:
+  scaleTargetRef: {apiVersion: apps/v1, kind: Deployment, name: hw11}
+  minReplicas: 2
+  maxReplicas: 3
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target: {type: Utilization, averageUtilization: 75}
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 45
+      policies: [{type: Pods, value: 1, periodSeconds: 15}]
+{{- end }}

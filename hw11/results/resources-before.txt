@@ -1,0 +1,11 @@
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   460Gi   192Gi   243Gi    45%    2.2M  2.5G    0%   /System/Volumes/Data
+PROFILE    STATUS     ARCH       CPUS    MEMORY    DISK     RUNTIME    ADDRESS
+default    Stopped    aarch64    2       3GiB      20GiB    docker
+hw11       Running    aarch64    3       5GiB      20GiB    docker
+29.5.2 CPUs=3 RAM=5143920640
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          0         0         0B        0B
+Containers      0         0         0B        0B
+Local Volumes   0         0         0B        0B
+Build Cache     0         0         0B        0B

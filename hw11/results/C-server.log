@@ -1,0 +1,400 @@
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44240 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871355.570782, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "93b15526c4c249239edd34f9fae42dd8", "session_id": "c0-10", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.362149668999791, "total_seconds": 6.66585391999979, "queue_seconds": 5.907273711000016, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:36968 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44246 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871355.7788053, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "16ec907bb3b049ec8b5e1c113dc9ea71", "session_id": "c0-11", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44262 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871355.85824, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "7fa24ce185a04c9988fdf95968c1c48a", "session_id": "c0-12", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44278 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871355.9638023, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "b741bfddab4044aeb65701565af6ff33", "session_id": "c1-13", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.18:43496 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.0526981, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "3fda749c2040487daea6cba6afcdaf61", "session_id": "c0-14", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44286 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.1531003, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "689fe95405cc4818a8f08cbafa6cea80", "session_id": "c0-15", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44294 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.2549071, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "30d865f3e27a4f77ac8ae41986d95e5c", "session_id": "c0-16", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44310 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871356.314686, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "dc0446032ec44967a7903a5f44f19639", "session_id": "c0-1", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.305309169999873, "total_seconds": 6.610535294999863, "queue_seconds": 5.866814669999712, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44326 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.6045432, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "a7f7ffece06e45f8b1526d12bcc4c0ee", "session_id": "c0-2", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44338 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:36980 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.6632557, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "32ded4bc9a6d4d909391443c1a60d597", "session_id": "c0-3", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44344 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.753043, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "2f9036fe239b41859078b8020ca233ba", "session_id": "c0-4", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44346 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871356.852822, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "ffa69be327164400b556483615eec8c9", "session_id": "c0-5", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:44350 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.053081, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "feaa3644a3e046679cab8c15a7a9f843", "session_id": "c0-7", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59598 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871357.0727353, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "0232762988d44dc18bf21ab36a95c573", "session_id": "c0-8", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.358994503000304, "total_seconds": 6.6630500870001015, "queue_seconds": 5.905331337000007, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59602 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.257746, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "2d23b276cdb5472aa6d02a6e09592a74", "session_id": "c0-9", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59612 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.3625236, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "27f3fa8480d8471e845c42bc2fe7a125", "session_id": "c0-10", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59626 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.466238, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "d3132a52647e47f99f2c66a5aa7844c1", "session_id": "c1-11", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.18:33816 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.552654, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "be5210d454144b2083d42acb3fe80383", "session_id": "c0-12", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59640 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52490 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.6542172, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "95f56077a003476a82c4ac1fd6b3bddf", "session_id": "c0-13", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59646 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "rejected", "t": 1794871357.7527528, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "2b4171677e4044849d6413a5f50af24f", "session_id": "c0-14", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "status": 429}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59648 - "POST /generate HTTP/1.1" 429 Too Many Requests
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871357.8094697, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "d1092a124dbb42aa82c0441b1f4212fa", "session_id": "c0-16", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.330290669000078, "total_seconds": 6.632533711000178, "queue_seconds": 5.895917669000028, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.19:59656 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871358.5675771, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "8d8ba2ce43224f0ab04155b63e4ecbe6", "session_id": "c0-6", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.359569961000034, "total_seconds": 6.662954377999995, "queue_seconds": 5.905105670000012, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52494 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52508 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871359.30856, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "4c1ff525f76c4f64b57ad8c6253a8803", "session_id": "c0-14", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.336537670000325, "total_seconds": 6.638458587000059, "queue_seconds": 5.8978074199999355, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52514 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871360.0695648, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "46ef296fcc464696adec42bdda5cd406", "session_id": "c0-4", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.350167170000077, "total_seconds": 6.653922002999934, "queue_seconds": 5.893153503000121, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52526 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871360.8094685, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "b0b33e356d2e4282b91a60eaf5c47132", "session_id": "c0-12", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.342117170000165, "total_seconds": 6.646507045000362, "queue_seconds": 5.9071170860001985, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871361.5714865, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "79870cb7ad0b458eab9876a9754dd2c1", "session_id": "c0-2", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.3639098779999586, "total_seconds": 6.666577127999972, "queue_seconds": 5.905201169000065, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52532 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871362.3152523, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "443f1802f9e94b0dadb42773af7ff482", "session_id": "c0-10", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.32555671099999, "total_seconds": 6.633419169999797, "queue_seconds": 5.889894918999744, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52548 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871363.0689135, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "157efcc734544de7b23c2a78799cb013", "session_id": "c0-0", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.4005102109999825, "total_seconds": 6.704755168999782, "queue_seconds": 5.951376211000024, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52554 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52570 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871363.8069232, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "f1e680fed6994582a577274023f99047", "session_id": "c0-8", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.335617627999909, "total_seconds": 6.638576086999819, "queue_seconds": 5.900765628000045, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] {"event": "completed", "t": 1794871364.56917, "pod": "hw11-56c467d947-gx2tr", "backend_mode": "simulated", "request_id": "a0d78969deab4fd1a8fb5eabf319fdbb", "session_id": "c0-15", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 6.405614919000072, "total_seconds": 6.7103815860000395, "queue_seconds": 5.948394961000304, "cache_hit": true}
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52582 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52598 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:52610 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59210 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59212 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59228 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59240 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59246 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59258 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59266 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59268 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59282 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59288 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59296 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:59308 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45610 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45626 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45630 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45644 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45648 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45654 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45668 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45674 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45682 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45688 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45694 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45698 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41628 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41634 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41638 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41650 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41662 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41668 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41676 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41682 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41690 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41694 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41702 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:41712 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54356 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54372 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54386 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54388 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54390 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54396 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54408 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54416 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54426 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54430 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54440 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54448 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54628 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54630 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54640 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54650 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54654 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54670 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54684 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54688 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54690 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54704 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54718 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:54726 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42046 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42056 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42064 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42080 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42094 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42096 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42110 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42126 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42140 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42144 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42152 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:42154 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45556 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45564 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45574 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45586 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45598 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45606 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45616 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45624 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45638 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45644 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45656 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:45658 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60740 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60750 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60766 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60778 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60780 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60792 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60800 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60816 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60822 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60826 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60838 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:60848 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55920 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55936 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55946 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55948 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.11:45302 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55960 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-gx2tr/api] INFO:     10.244.0.1:55968 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871345.1838033, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "3c78a57467ec4114a4d71def6736bde0", "session_id": "c2-0", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42903937499977474, "total_seconds": 0.7311700010000095, "queue_seconds": 0.00016400000004068715, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871345.895964, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "20961560979748ea93dae793701ef595", "session_id": "c3-5", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6407840419997228, "total_seconds": 0.9429766249995737, "queue_seconds": 0.2309447919997183, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:46762 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:49866 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:51154 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871346.6845286, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "d0dbe2ec26c144ccae98a8f8fd838a85", "session_id": "c2-15", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42740287499964325, "total_seconds": 0.7304826669997055, "queue_seconds": 0.00015437499996551196, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:46768 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871347.39481, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "a65b602d28a04aeabc14103b6b27a518", "session_id": "c3-3", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6390241249996507, "total_seconds": 0.9414007089999359, "queue_seconds": 0.23126858299974629, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48708 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52096 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52110 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45238 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871348.1857038, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "1682238eb0f64f4a8632e8cae6844bd4", "session_id": "c2-13", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42971445900002436, "total_seconds": 0.731771375000335, "queue_seconds": 0.000161208000008628, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871348.9022105, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "85e5b20c025d470792c2b7e4a658c181", "session_id": "c3-1", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6454919579996385, "total_seconds": 0.9492569169997296, "queue_seconds": 0.23291979099985838, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52126 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48716 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45248 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871349.6854198, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "173a8358f59d4272aeb55de9c08afbc8", "session_id": "c2-11", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42890016699993794, "total_seconds": 0.731240833999891, "queue_seconds": 0.00023045799980536685, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52138 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871350.4042263, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "e41b80cb94494c8b92a2436b6de01013", "session_id": "c3-16", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6451111250003123, "total_seconds": 0.9505797500000881, "queue_seconds": 0.2319013750002341, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48726 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52154 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45252 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871351.1846838, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "3d06043fea7944aaa1ee1a2c9b17eece", "session_id": "c2-9", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42842462499993417, "total_seconds": 0.7317495829997824, "queue_seconds": 0.00015774999974382808, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871351.8964753, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "9b428a9825be4c8caa0ff74ebf2510bb", "session_id": "c3-14", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6368344170000455, "total_seconds": 0.9392785420000109, "queue_seconds": 0.22761579100006202, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52160 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48740 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45256 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871352.6844053, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "c7ade4430ca04c698dcdadd999ba0d9e", "session_id": "c2-7", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42917133299988564, "total_seconds": 0.7319033750000017, "queue_seconds": 0.00013899999976274557, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52162 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52168 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871353.3977423, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "13bc790638b44fc7ac2c42d57bb619a5", "session_id": "c3-12", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6413457499998003, "total_seconds": 0.9441141669999524, "queue_seconds": 0.23090429199965, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48750 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52174 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45264 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871354.1838088, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "4bfd0d336b054fd18d418ad4f679625f", "session_id": "c2-5", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42698337599995284, "total_seconds": 0.7294197510000231, "queue_seconds": 0.00015216700012388173, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871354.894578, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "88f5da6792b346019fb3af502bc8e5d6", "session_id": "c3-10", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6378477090001979, "total_seconds": 0.9396777510000902, "queue_seconds": 0.2290450420000525, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52176 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48754 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45280 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871355.6839433, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "4be5440719a648899f3c392a6e2e1080", "session_id": "c2-3", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42810145800012833, "total_seconds": 0.7314557920003608, "queue_seconds": 0.00017054099998858874, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52184 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871356.4002717, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "eeb09cd769ed4c3ca3ff59e7d754567c", "session_id": "c3-8", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.642567582999618, "total_seconds": 0.9467391670000325, "queue_seconds": 0.23053379199973278, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:48768 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:52190 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.16:45286 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871357.1837096, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "d384f374f42d4846b9cd1059332e0a1e", "session_id": "c2-1", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42950595799993607, "total_seconds": 0.7311812090001695, "queue_seconds": 0.00018083299983118195, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871357.896914, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "57bb68285f7e48189895f5972ffedae9", "session_id": "c3-6", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.6378400000003239, "total_seconds": 0.9428209170000628, "queue_seconds": 0.22975720800013733, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53276 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53284 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.17:43874 - "POST /generate HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] {"event": "completed", "t": 1794871358.6849327, "pod": "hw11-56c467d947-j6vzw", "backend_mode": "simulated", "request_id": "6977db75b5ca4a0ab31e45517a1596d1", "session_id": "c2-16", "model_id": "sim-A", "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf", "chunks": 4, "ttfc_seconds": 0.42785666700001457, "total_seconds": 0.7316490419998445, "queue_seconds": 0.00021774999959234265, "cache_hit": true}
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53290 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53298 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53302 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53308 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53314 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53312 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53330 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53334 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53342 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53354 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59784 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59798 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59812 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59814 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59824 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59838 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59840 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59854 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59860 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59864 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59866 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:59870 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42036 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42052 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42068 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42072 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42076 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42082 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42094 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42096 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42110 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42118 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42124 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42140 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58300 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58312 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58316 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58322 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58328 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58332 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58352 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58336 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58354 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58364 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58366 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:58378 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53918 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53920 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53934 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53948 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53954 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53962 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53972 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53982 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:53998 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:54006 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:54016 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:54032 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49994 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50008 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50022 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50028 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50034 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50048 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50056 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50062 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50068 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50076 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50090 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:50096 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42406 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42414 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42426 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42436 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42442 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42452 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42454 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42456 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42472 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42476 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42482 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:42490 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33550 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33566 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33580 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33592 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33598 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33600 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33604 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33612 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33620 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33626 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33628 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:33638 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47730 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47744 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47754 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47762 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47766 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47782 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47798 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47810 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47818 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47834 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47840 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:47852 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49116 - "GET /live HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49132 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49144 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49148 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49152 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.1:49162 - "GET /ready HTTP/1.1" 200 OK
+[pod/hw11-56c467d947-j6vzw/api] INFO:     10.244.0.11:37772 - "GET /metrics HTTP/1.1" 200 OK

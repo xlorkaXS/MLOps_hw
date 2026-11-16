@@ -1,0 +1,62 @@
+{
+  "phase": "B-1-uniform-plain",
+  "start": 1794869440.943319,
+  "end": 1794869536.943319,
+  "n_client": 423,
+  "server": {
+    "ttfc_p95": {
+      "expr": "histogram_quantile(0.95,sum by(le)(increase(lab_ttfc_seconds_bucket[96s])))",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1794869536.943,
+                "0.9562499999999997"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "count": {
+      "expr": "sum(increase(lab_ttfc_seconds_count[96s]))",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1794869536.943,
+                "424.258064516129"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "total_p95": {
+      "expr": "histogram_quantile(0.95,sum by(le)(increase(lab_total_seconds_bucket[96s])))",
+      "result": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1794869536.943,
+                "1.330625"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

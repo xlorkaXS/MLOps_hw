@@ -1,0 +1,2 @@
+C-heavy-sticky 850 {'completed': 235, 'rejected': 615}
+HPA ready: [2, 3] alerts: {'TooManyRefusals': {'pending', 'firing'}, 'SlowFirstChunk': {'pending', 'firing'}}

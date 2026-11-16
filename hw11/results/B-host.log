@@ -1,0 +1,12 @@
+B-1-uniform-sticky 528 {'completed': 349, 'rejected': 179}
+B-1-uniform-plain 528 {'completed': 528}
+B-1-skew-sticky 528 {'completed': 349, 'rejected': 179}
+B-1-skew-plain 528 {'completed': 528}
+B-2-uniform-sticky 528 {'completed': 349, 'rejected': 179}
+B-2-uniform-plain 528 {'completed': 528}
+B-2-skew-sticky 528 {'completed': 349, 'rejected': 179}
+B-2-skew-plain 528 {'completed': 528}
+B-3-uniform-sticky 528 {'completed': 351, 'rejected': 177}
+B-3-uniform-plain 528 {'completed': 528}
+B-3-skew-sticky 528 {'completed': 351, 'rejected': 177}
+B-3-skew-plain 528 {'completed': 528}

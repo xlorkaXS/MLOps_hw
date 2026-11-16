@@ -1,0 +1,8 @@
+test_common_payload_and_clock (__main__.Schedule) ... ok
+test_uniform_vs_skew_counts (__main__.Schedule) ... ok
+test_unique_open_loop (__main__.Schedule) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+OK

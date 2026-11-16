@@ -1,0 +1,9 @@
+A-defect 56 {'completed': 19, 'rejected': 37}
+A-fixed 56 {'completed': 56}
+A-rollout 122 {'completed': 106, 'rejected': 16}
+Traceback (most recent call last):
+  File "hw11/run.py", line 198, in <module>
+    globals()[ap.parse_args().phase.lower()]()
+  File "hw11/run.py", line 154, in a
+    assert all(r['disposition']=='completed' for r in rows)
+AssertionError

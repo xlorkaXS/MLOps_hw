@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: load
+spec:
+  serviceName: load
+  replicas: 4
+  podManagementPolicy: Parallel
+  selector:
+    matchLabels: {app: load}
+  template:
+    metadata:
+      labels: {app: load}
+    spec:
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: 1
+      containers:
+      - name: client
+        image: hw11-api:1.0.0
+        imagePullPolicy: Never
+        command: ["python","-c","import time; time.sleep(86400)"]
+        resources:
+          requests: {cpu: 20m, memory: 16Mi}
+          limits: {cpu: 250m, memory: 64Mi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: load
+spec:
+  clusterIP: None
+  selector: {app: load}

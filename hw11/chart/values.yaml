@@ -1,0 +1,17 @@
+image: hw11-api:1.0.0
+replicas: 2
+modelVersion: A
+warmup: 20
+neverReady: false
+prematureProbes: false
+cpuRequest: 100m
+cpuLimit: 500m
+ramRequest: 64Mi
+ramLimit: 160Mi
+concurrent: 1
+queueLimit: 8
+cacheLimit: 12
+hitSeconds: 0.04
+missSeconds: 0.28
+graceSeconds: 45
+hpa: false

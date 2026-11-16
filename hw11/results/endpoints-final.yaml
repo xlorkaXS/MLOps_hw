@@ -1,0 +1,326 @@
+apiVersion: v1
+items:
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.13
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: grafana-cfb687856-sh62h
+      namespace: default
+      uid: cfdd8e96-dc8c-4dd4-978b-edabb47ed7f7
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2026-11-16T22:37:21Z"
+    creationTimestamp: "2026-11-16T22:36:12Z"
+    generateName: grafana-
+    generation: 2
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: grafana
+    name: grafana-xklkt
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: grafana
+      uid: 9495eac0-9d1c-4c59-938c-fb46f40bb028
+    resourceVersion: "994"
+    uid: 1b846270-ce4a-4798-b1a8-8d5ec7be8358
+  ports:
+  - name: ""
+    port: 3000
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.37
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: hw11-56c467d947-gx2tr
+      namespace: default
+      uid: a7c035a3-192c-4004-a06a-0fce8060a73a
+  - addresses:
+    - 10.244.0.39
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: hw11-56c467d947-j6vzw
+      namespace: default
+      uid: 927b96ed-2dfb-4b56-8b39-4a04448df099
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2026-11-16T22:39:02Z"
+    generateName: hw11-plain-
+    generation: 102
+    labels:
+      app.kubernetes.io/managed-by: Helm
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: hw11-plain
+    name: hw11-plain-4qmh6
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: hw11-plain
+      uid: 913280d1-93a0-41ff-9546-046c413087ce
+    resourceVersion: "6709"
+    uid: cc7dac34-262b-4af6-a359-d7dd5a54c704
+  ports:
+  - name: http
+    port: 8091
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.37
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: hw11-56c467d947-gx2tr
+      namespace: default
+      uid: a7c035a3-192c-4004-a06a-0fce8060a73a
+  - addresses:
+    - 10.244.0.39
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: hw11-56c467d947-j6vzw
+      namespace: default
+      uid: 927b96ed-2dfb-4b56-8b39-4a04448df099
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2026-11-16T22:39:02Z"
+    generateName: hw11-sticky-
+    generation: 102
+    labels:
+      app.kubernetes.io/managed-by: Helm
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: hw11-sticky
+    name: hw11-sticky-s247x
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: hw11-sticky
+      uid: 25626300-accc-4cec-b7c6-1c651c145ad3
+    resourceVersion: "6711"
+    uid: a8b7d427-ee4d-4f0f-8efa-9491f628babd
+  ports:
+  - name: http
+    port: 8091
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.12
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: kube-state-78897fc998-76wtn
+      namespace: default
+      uid: cbff0fda-0012-4ad9-b77f-02c047ced373
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2026-11-16T22:36:43Z"
+    creationTimestamp: "2026-11-16T22:36:12Z"
+    generateName: kube-state-
+    generation: 2
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: kube-state
+    name: kube-state-m2pr9
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: kube-state
+      uid: 11890729-d4be-4ab1-a422-b53ac4edd99e
+    resourceVersion: "899"
+    uid: 29117dc3-5f96-4ebd-9858-538171dea1f7
+  ports:
+  - name: ""
+    port: 8080
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.18.0.2
+    conditions:
+      ready: true
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2026-11-16T22:34:26Z"
+    generation: 1
+    labels:
+      kubernetes.io/service-name: kubernetes
+    name: kubernetes
+    namespace: default
+    resourceVersion: "223"
+    uid: 349585db-98e6-4963-b438-06f359ed604a
+  ports:
+  - name: https
+    port: 6443
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.16
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    hostname: load-3
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: load-3
+      namespace: default
+      uid: 288ed8e5-5bad-4d62-8054-1759e642810e
+  - addresses:
+    - 10.244.0.17
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    hostname: load-2
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: load-2
+      namespace: default
+      uid: 6b48ef8e-0db5-4813-9fe3-e167ac67f0e6
+  - addresses:
+    - 10.244.0.18
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    hostname: load-1
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: load-1
+      namespace: default
+      uid: 0b066c7a-262c-44de-9865-7d470511567d
+  - addresses:
+    - 10.244.0.19
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    hostname: load-0
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: load-0
+      namespace: default
+      uid: 2c2c7f48-c44a-463a-825e-f9dfcc46427f
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2026-11-16T22:39:02Z"
+    creationTimestamp: "2026-11-16T22:35:00Z"
+    generateName: load-
+    generation: 17
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: load
+      service.kubernetes.io/headless: ""
+    name: load-jsncd
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: load
+      uid: 76a59996-5dbd-4e1d-ba8d-6ee46ee7997b
+    resourceVersion: "1284"
+    uid: 47d8ac65-bd5b-483c-a417-fe3e46a93f98
+  ports: null
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.11
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: hw11-control-plane
+    targetRef:
+      kind: Pod
+      name: prometheus-cf69b9496-568kh
+      namespace: default
+      uid: 7b8f1074-547d-4608-a735-c4c9c2c2aaad
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2026-11-16T22:36:38Z"
+    creationTimestamp: "2026-11-16T22:36:12Z"
+    generateName: prometheus-
+    generation: 2
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: prometheus
+    name: prometheus-zshfm
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: prometheus
+      uid: c0f2877b-e0fb-4fd7-a8d8-9a50922ac1a1
+    resourceVersion: "885"
+    uid: 1d79c032-22c0-4be3-abde-af55fa0e92ae
+  ports:
+  - name: ""
+    port: 9090
+    protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""

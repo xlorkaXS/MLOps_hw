@@ -1,0 +1,12 @@
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          4         1         1.531GB   2.745MB (0%)
+Containers      1         1         3.932MB   0B (0%)
+Local Volumes   1         1         2.554GB   0B (0%)
+Build Cache     0         0         0B        0B
+
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          20G  3.9G   15G  21% /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb1        20G  3.9G   15G  21% /var
+4.1G	Colima hw11 data disk
+1.1G	Colima hw11 VM directory

@@ -1,0 +1,10 @@
+NAME                          READY   STATUS    RESTARTS     AGE     IP            NODE                 NOMINATED NODE   READINESS GATES
+grafana-cfb687856-sh62h       1/1     Running   0            47m     10.244.0.13   hw11-control-plane   <none>           <none>
+hw11-56c467d947-gx2tr         1/1     Running   1 (7m ago)   8m8s    10.244.0.37   hw11-control-plane   <none>           <none>
+hw11-56c467d947-j6vzw         1/1     Running   0            7m24s   10.244.0.39   hw11-control-plane   <none>           <none>
+kube-state-78897fc998-76wtn   1/1     Running   0            47m     10.244.0.12   hw11-control-plane   <none>           <none>
+load-0                        1/1     Running   0            45m     10.244.0.19   hw11-control-plane   <none>           <none>
+load-1                        1/1     Running   0            45m     10.244.0.18   hw11-control-plane   <none>           <none>
+load-2                        1/1     Running   0            46m     10.244.0.17   hw11-control-plane   <none>           <none>
+load-3                        1/1     Running   0            46m     10.244.0.16   hw11-control-plane   <none>           <none>
+prometheus-cf69b9496-568kh    1/1     Running   0            47m     10.244.0.11   hw11-control-plane   <none>           <none>

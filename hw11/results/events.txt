@@ -1,0 +1,296 @@
+LAST SEEN   TYPE      REASON                    OBJECT                             MESSAGE
+49m         Normal    Starting                  node/hw11-control-plane            Starting kubelet.
+49m         Normal    NodeAllocatableEnforced   node/hw11-control-plane            Updated Node Allocatable limit across pods
+49m         Normal    NodeHasSufficientMemory   node/hw11-control-plane            Node hw11-control-plane status is now: NodeHasSufficientMemory
+49m         Normal    NodeHasNoDiskPressure     node/hw11-control-plane            Node hw11-control-plane status is now: NodeHasNoDiskPressure
+49m         Normal    NodeHasSufficientPID      node/hw11-control-plane            Node hw11-control-plane status is now: NodeHasSufficientPID
+49m         Normal    RegisteredNode            node/hw11-control-plane            Node hw11-control-plane event: Registered Node hw11-control-plane in Controller
+49m         Normal    Starting                  node/hw11-control-plane
+49m         Normal    NodeReady                 node/hw11-control-plane            Node hw11-control-plane status is now: NodeReady
+49m         Normal    Pulled                    pod/hw11-5786bc85d6-kcd9p          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+49m         Normal    Scheduled                 pod/load-2                         Successfully assigned default/load-2 to hw11-control-plane
+49m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-kcd9p
+49m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-nxfjb
+49m         Normal    Started                   pod/hw11-5786bc85d6-nxfjb          Container started
+49m         Normal    Created                   pod/hw11-5786bc85d6-nxfjb          Container created
+49m         Normal    Pulled                    pod/hw11-5786bc85d6-nxfjb          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+49m         Normal    Scheduled                 pod/hw11-5786bc85d6-nxfjb          Successfully assigned default/hw11-5786bc85d6-nxfjb to hw11-control-plane
+49m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5786bc85d6 from 0 to 2
+49m         Normal    Started                   pod/hw11-5786bc85d6-kcd9p          Container started
+49m         Normal    Created                   pod/hw11-5786bc85d6-kcd9p          Container created
+46m         Normal    SuccessfulCreate          statefulset/load                   Create Pod load-2 in StatefulSet load successful
+45m         Normal    SuccessfulCreate          statefulset/load                   Create Pod load-1 in StatefulSet load successful
+45m         Normal    SuccessfulCreate          statefulset/load                   Create Pod load-0 in StatefulSet load successful
+49m         Normal    Scheduled                 pod/hw11-5786bc85d6-kcd9p          Successfully assigned default/hw11-5786bc85d6-kcd9p to hw11-control-plane
+49m         Normal    Started                   pod/load-1                         Container started
+49m         Normal    Scheduled                 pod/load-0                         Successfully assigned default/load-0 to hw11-control-plane
+49m         Normal    Pulled                    pod/load-0                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+49m         Normal    Created                   pod/load-0                         Container created
+49m         Normal    Started                   pod/load-3                         Container started
+49m         Normal    Created                   pod/load-3                         Container created
+49m         Normal    Pulled                    pod/load-3                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+49m         Normal    Scheduled                 pod/load-3                         Successfully assigned default/load-3 to hw11-control-plane
+49m         Normal    Started                   pod/load-0                         Container started
+49m         Normal    Scheduled                 pod/load-1                         Successfully assigned default/load-1 to hw11-control-plane
+49m         Normal    Pulled                    pod/load-1                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+46m         Normal    SuccessfulCreate          statefulset/load                   Create Pod load-3 in StatefulSet load successful
+49m         Normal    Created                   pod/load-1                         Container created
+49m         Normal    Started                   pod/load-2                         Container started
+49m         Normal    Created                   pod/load-2                         Container created
+49m         Normal    Pulled                    pod/load-2                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+47m         Normal    ScalingReplicaSet         deployment/kube-state              Scaled up replica set kube-state-78897fc998 from 0 to 1
+47m         Normal    SuccessfulCreate          replicaset/kube-state-78897fc998   Created pod: kube-state-78897fc998-76wtn
+47m         Normal    SuccessfulCreate          replicaset/prometheus-cf69b9496    Created pod: prometheus-cf69b9496-568kh
+47m         Normal    ScalingReplicaSet         deployment/grafana                 Scaled up replica set grafana-cfb687856 from 0 to 1
+47m         Normal    Scheduled                 pod/kube-state-78897fc998-76wtn    Successfully assigned default/kube-state-78897fc998-76wtn to hw11-control-plane
+47m         Normal    SuccessfulCreate          replicaset/grafana-cfb687856       Created pod: grafana-cfb687856-sh62h
+47m         Normal    Scheduled                 pod/grafana-cfb687856-sh62h        Successfully assigned default/grafana-cfb687856-sh62h to hw11-control-plane
+47m         Normal    ScalingReplicaSet         deployment/prometheus              Scaled up replica set prometheus-cf69b9496 from 0 to 1
+47m         Normal    Scheduled                 pod/prometheus-cf69b9496-568kh     Successfully assigned default/prometheus-cf69b9496-568kh to hw11-control-plane
+47m         Normal    Pulling                   pod/grafana-cfb687856-sh62h        Pulling image "grafana/grafana:12.1.1"
+47m         Normal    Pulling                   pod/kube-state-78897fc998-76wtn    Pulling image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0"
+47m         Normal    Pulling                   pod/prometheus-cf69b9496-568kh     Pulling image "prom/prometheus:v3.5.0"
+47m         Normal    Started                   pod/prometheus-cf69b9496-568kh     Container started
+47m         Normal    Created                   pod/prometheus-cf69b9496-568kh     Container created
+47m         Normal    Pulled                    pod/prometheus-cf69b9496-568kh     Successfully pulled image "prom/prometheus:v3.5.0" in 25.071s (25.071s including waiting). Image size: 117159012 bytes.
+47m         Normal    Created                   pod/kube-state-78897fc998-76wtn    Container created
+47m         Normal    Pulled                    pod/kube-state-78897fc998-76wtn    Successfully pulled image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0" in 4.996s (30.047s including waiting). Image size: 17210429 bytes.
+47m         Normal    Started                   pod/kube-state-78897fc998-76wtn    Container started
+47m         Normal    Killing                   pod/hw11-5786bc85d6-kcd9p          Stopping container api
+47m         Normal    Killing                   pod/hw11-5786bc85d6-nxfjb          Stopping container api
+47m         Normal    Killing                   pod/load-3                         Stopping container client
+47m         Normal    SuccessfulDelete          statefulset/load                   Delete Pod load-3 in StatefulSet load successful
+46m         Normal    Pulled                    pod/grafana-cfb687856-sh62h        Successfully pulled image "grafana/grafana:12.1.1" in 38.104s (1m8.127s including waiting). Image size: 185899103 bytes.
+46m         Normal    Started                   pod/grafana-cfb687856-sh62h        Container started
+46m         Normal    Created                   pod/grafana-cfb687856-sh62h        Container created
+46m         Normal    Started                   pod/load-3                         Container started
+46m         Normal    Created                   pod/load-3                         Container created
+46m         Normal    Pulled                    pod/load-3                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+46m         Normal    Scheduled                 pod/load-3                         Successfully assigned default/load-3 to hw11-control-plane
+46m         Normal    SuccessfulDelete          statefulset/load                   Delete Pod load-2 in StatefulSet load successful
+46m         Normal    Killing                   pod/load-2                         Stopping container client
+46m         Normal    Scheduled                 pod/load-2                         Successfully assigned default/load-2 to hw11-control-plane
+46m         Normal    Started                   pod/load-2                         Container started
+46m         Normal    SuccessfulDelete          statefulset/load                   Delete Pod load-1 in StatefulSet load successful
+46m         Normal    Killing                   pod/load-1                         Stopping container client
+46m         Normal    Created                   pod/load-2                         Container created
+46m         Normal    Pulled                    pod/load-2                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+45m         Normal    SuccessfulDelete          statefulset/load                   Delete Pod load-0 in StatefulSet load successful
+45m         Normal    Started                   pod/load-1                         Container started
+45m         Normal    Killing                   pod/load-0                         Stopping container client
+45m         Normal    Pulled                    pod/load-1                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+45m         Normal    Scheduled                 pod/load-1                         Successfully assigned default/load-1 to hw11-control-plane
+45m         Normal    Created                   pod/load-1                         Container created
+45m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5786bc85d6 from 0 to 2
+45m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-hjv5l
+45m         Normal    Scheduled                 pod/hw11-5786bc85d6-458f2          Successfully assigned default/hw11-5786bc85d6-458f2 to hw11-control-plane
+45m         Normal    Started                   pod/load-0                         Container started
+45m         Normal    Created                   pod/load-0                         Container created
+45m         Normal    Pulled                    pod/load-0                         Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+45m         Normal    Scheduled                 pod/load-0                         Successfully assigned default/load-0 to hw11-control-plane
+45m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-458f2
+45m         Normal    Scheduled                 pod/hw11-5786bc85d6-hjv5l          Successfully assigned default/hw11-5786bc85d6-hjv5l to hw11-control-plane
+45m         Normal    Pulled                    pod/hw11-5786bc85d6-458f2          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+45m         Normal    Created                   pod/hw11-5786bc85d6-458f2          Container created
+45m         Normal    Pulled                    pod/hw11-5786bc85d6-hjv5l          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+45m         Normal    Created                   pod/hw11-5786bc85d6-hjv5l          Container created
+45m         Normal    Started                   pod/hw11-5786bc85d6-hjv5l          Container started
+45m         Normal    Started                   pod/hw11-5786bc85d6-458f2          Container started
+39m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-844dcd5f96 from 0 to 1
+44m         Normal    Scheduled                 pod/hw11-844dcd5f96-qdh2z          Successfully assigned default/hw11-844dcd5f96-qdh2z to hw11-control-plane
+44m         Normal    SuccessfulCreate          replicaset/hw11-844dcd5f96         Created pod: hw11-844dcd5f96-qdh2z
+44m         Normal    Started                   pod/hw11-844dcd5f96-qdh2z          Container started
+44m         Normal    Created                   pod/hw11-844dcd5f96-qdh2z          Container created
+44m         Normal    Pulled                    pod/hw11-844dcd5f96-qdh2z          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+43m         Warning   Unhealthy                 pod/hw11-844dcd5f96-qdh2z          Startup probe failed: HTTP probe failed with statuscode: 503
+43m         Normal    Created                   pod/hw11-844dcd5f96-z5bbm          Container created
+43m         Normal    SuccessfulDelete          replicaset/hw11-5786bc85d6         Deleted pod: hw11-5786bc85d6-458f2
+43m         Normal    SuccessfulCreate          replicaset/hw11-844dcd5f96         Created pod: hw11-844dcd5f96-z5bbm
+43m         Normal    Started                   pod/hw11-844dcd5f96-z5bbm          Container started
+43m         Normal    Pulled                    pod/hw11-844dcd5f96-z5bbm          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+43m         Normal    Scheduled                 pod/hw11-844dcd5f96-z5bbm          Successfully assigned default/hw11-844dcd5f96-z5bbm to hw11-control-plane
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-5786bc85d6 from 2 to 1
+39m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-844dcd5f96 from 1 to 2
+43m         Normal    Killing                   pod/hw11-5786bc85d6-458f2          Stopping container api
+43m         Warning   Unhealthy                 pod/hw11-844dcd5f96-z5bbm          Startup probe failed: HTTP probe failed with statuscode: 503
+43m         Normal    SuccessfulDelete          replicaset/hw11-5786bc85d6         Deleted pod: hw11-5786bc85d6-hjv5l
+43m         Normal    Killing                   pod/hw11-5786bc85d6-hjv5l          Stopping container api
+9m48s       Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-5786bc85d6 from 1 to 0
+43m         Warning   Unhealthy                 pod/hw11-5786bc85d6-hjv5l          Readiness probe failed: Get "http://10.244.0.20:8091/health": dial tcp 10.244.0.20:8091: connect: connection refused
+40m         Normal    Scheduled                 pod/hw11-5cf48b575d-9hhk8          Successfully assigned default/hw11-5cf48b575d-9hhk8 to hw11-control-plane
+40m         Normal    Pulled                    pod/hw11-5cf48b575d-9hhk8          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+40m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-9hhk8
+40m         Normal    Created                   pod/hw11-5cf48b575d-9hhk8          Container created
+40m         Normal    Started                   pod/hw11-5cf48b575d-9hhk8          Container started
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5cf48b575d from 0 to 1
+39m         Warning   Unhealthy                 pod/hw11-5cf48b575d-9hhk8          Startup probe failed: HTTP probe failed with statuscode: 503
+39m         Normal    Killing                   pod/hw11-844dcd5f96-z5bbm          Stopping container api
+39m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-6dhcp
+39m         Normal    Scheduled                 pod/hw11-5cf48b575d-6dhcp          Successfully assigned default/hw11-5cf48b575d-6dhcp to hw11-control-plane
+39m         Warning   Unhealthy                 pod/hw11-844dcd5f96-z5bbm          Readiness probe failed: HTTP probe failed with statuscode: 503
+39m         Normal    Pulled                    pod/hw11-5cf48b575d-6dhcp          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+39m         Normal    Started                   pod/hw11-5cf48b575d-6dhcp          Container started
+39m         Normal    Created                   pod/hw11-5cf48b575d-6dhcp          Container created
+39m         Normal    SuccessfulDelete          replicaset/hw11-844dcd5f96         Deleted pod: hw11-844dcd5f96-z5bbm
+39m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-844dcd5f96 from 2 to 1
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5cf48b575d from 1 to 2
+39m         Warning   Unhealthy                 pod/hw11-5cf48b575d-6dhcp          Startup probe failed: HTTP probe failed with statuscode: 503
+39m         Warning   Unhealthy                 pod/hw11-844dcd5f96-z5bbm          Readiness probe failed: Get "http://10.244.0.23:8091/ready": dial tcp 10.244.0.23:8091: connect: connection refused
+39m         Normal    SuccessfulDelete          replicaset/hw11-844dcd5f96         Deleted pod: hw11-844dcd5f96-qdh2z
+37m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-844dcd5f96 from 1 to 0
+39m         Warning   Unhealthy                 pod/hw11-844dcd5f96-qdh2z          Readiness probe failed: HTTP probe failed with statuscode: 503
+39m         Normal    Killing                   pod/hw11-844dcd5f96-qdh2z          Stopping container api
+39m         Normal    Started                   pod/hw11-844dcd5f96-zs9t4          Container started
+39m         Normal    Created                   pod/hw11-844dcd5f96-zs9t4          Container created
+39m         Normal    SuccessfulCreate          replicaset/hw11-844dcd5f96         Created pod: hw11-844dcd5f96-zs9t4
+39m         Normal    Pulled                    pod/hw11-844dcd5f96-zs9t4          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+39m         Normal    Scheduled                 pod/hw11-844dcd5f96-zs9t4          Successfully assigned default/hw11-844dcd5f96-zs9t4 to hw11-control-plane
+39m         Warning   Unhealthy                 pod/hw11-844dcd5f96-zs9t4          Startup probe failed: HTTP probe failed with statuscode: 503
+39m         Warning   Unhealthy                 pod/hw11-844dcd5f96-qdh2z          Readiness probe failed: Get "http://10.244.0.22:8091/ready": dial tcp 10.244.0.22:8091: connect: connection refused
+39m         Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-6dhcp
+39m         Normal    Started                   pod/hw11-844dcd5f96-j45gm          Container started
+39m         Normal    Created                   pod/hw11-844dcd5f96-j45gm          Container created
+39m         Normal    Pulled                    pod/hw11-844dcd5f96-j45gm          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+39m         Normal    Scheduled                 pod/hw11-844dcd5f96-j45gm          Successfully assigned default/hw11-844dcd5f96-j45gm to hw11-control-plane
+38m         Warning   Unhealthy                 pod/hw11-5cf48b575d-6dhcp          Readiness probe failed: HTTP probe failed with statuscode: 503
+3m37s       Normal    ScalingReplicaSet         deployment/hw11                    (combined from similar events): Scaled down replica set hw11-56c467d947 from 3 to 2
+39m         Normal    Killing                   pod/hw11-5cf48b575d-6dhcp          Stopping container api
+39m         Normal    SuccessfulCreate          replicaset/hw11-844dcd5f96         Created pod: hw11-844dcd5f96-j45gm
+38m         Warning   Unhealthy                 pod/hw11-844dcd5f96-j45gm          Startup probe failed: HTTP probe failed with statuscode: 503
+38m         Warning   Unhealthy                 pod/hw11-5cf48b575d-9hhk8          Readiness probe failed: HTTP probe failed with statuscode: 503
+38m         Normal    Killing                   pod/hw11-5cf48b575d-9hhk8          Stopping container api
+38m         Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-9hhk8
+38m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-mfwsv
+38m         Normal    Scheduled                 pod/hw11-5cf48b575d-mfwsv          Successfully assigned default/hw11-5cf48b575d-mfwsv to hw11-control-plane
+38m         Warning   Unhealthy                 pod/hw11-5cf48b575d-9hhk8          Readiness probe failed: Get "http://10.244.0.24:8091/ready": dial tcp 10.244.0.24:8091: connect: connection refused
+38m         Normal    Pulled                    pod/hw11-5cf48b575d-mfwsv          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+38m         Normal    Created                   pod/hw11-5cf48b575d-mfwsv          Container created
+38m         Normal    Started                   pod/hw11-5cf48b575d-mfwsv          Container started
+38m         Warning   Unhealthy                 pod/hw11-5cf48b575d-mfwsv          Startup probe failed: HTTP probe failed with statuscode: 503
+38m         Normal    Killing                   pod/hw11-844dcd5f96-j45gm          Stopping container api
+38m         Normal    Pulled                    pod/hw11-5cf48b575d-jm6vh          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+38m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-jm6vh
+38m         Normal    SuccessfulDelete          replicaset/hw11-844dcd5f96         Deleted pod: hw11-844dcd5f96-j45gm
+38m         Normal    Started                   pod/hw11-5cf48b575d-jm6vh          Container started
+38m         Warning   Unhealthy                 pod/hw11-844dcd5f96-j45gm          Readiness probe failed: HTTP probe failed with statuscode: 503
+38m         Normal    Created                   pod/hw11-5cf48b575d-jm6vh          Container created
+38m         Normal    Scheduled                 pod/hw11-5cf48b575d-jm6vh          Successfully assigned default/hw11-5cf48b575d-jm6vh to hw11-control-plane
+37m         Warning   Unhealthy                 pod/hw11-5cf48b575d-jm6vh          Startup probe failed: HTTP probe failed with statuscode: 503
+38m         Warning   Unhealthy                 pod/hw11-844dcd5f96-j45gm          Readiness probe failed: Get "http://10.244.0.27:8091/ready": dial tcp 10.244.0.27:8091: connect: connection refused
+37m         Normal    SuccessfulDelete          replicaset/hw11-844dcd5f96         Deleted pod: hw11-844dcd5f96-zs9t4
+37m         Normal    Killing                   pod/hw11-844dcd5f96-zs9t4          Stopping container api
+37m         Warning   Unhealthy                 pod/hw11-844dcd5f96-zs9t4          Readiness probe failed: HTTP probe failed with statuscode: 503
+36m         Normal    SuccessfulCreate          replicaset/hw11-7f4cc66459         Created pod: hw11-7f4cc66459-vplnd
+36m         Normal    Scheduled                 pod/hw11-7f4cc66459-vplnd          Successfully assigned default/hw11-7f4cc66459-vplnd to hw11-control-plane
+36m         Normal    Pulled                    pod/hw11-7f4cc66459-vplnd          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+36m         Normal    Created                   pod/hw11-7f4cc66459-vplnd          Container created
+36m         Normal    Started                   pod/hw11-7f4cc66459-vplnd          Container started
+35m         Warning   Unhealthy                 pod/hw11-7f4cc66459-vplnd          Startup probe failed: HTTP probe failed with statuscode: 503
+35m         Normal    SuccessfulDelete          replicaset/hw11-7f4cc66459         Deleted pod: hw11-7f4cc66459-vplnd
+35m         Normal    Killing                   pod/hw11-7f4cc66459-vplnd          Stopping container api
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5786bc85d6 from 0 to 1
+10m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-z8d4l
+10m         Normal    Scheduled                 pod/hw11-5786bc85d6-z8d4l          Successfully assigned default/hw11-5786bc85d6-z8d4l to hw11-control-plane
+10m         Normal    Started                   pod/hw11-5786bc85d6-z8d4l          Container started
+10m         Normal    Created                   pod/hw11-5786bc85d6-z8d4l          Container created
+10m         Normal    Pulled                    pod/hw11-5786bc85d6-z8d4l          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+10m         Normal    Pulled                    pod/hw11-5786bc85d6-mb5dp          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+10m         Normal    SuccessfulCreate          replicaset/hw11-5786bc85d6         Created pod: hw11-5786bc85d6-mb5dp
+8m32s       Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-5cf48b575d from 2 to 1
+10m         Normal    Started                   pod/hw11-5786bc85d6-mb5dp          Container started
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-5786bc85d6 from 1 to 2
+10m         Normal    Killing                   pod/hw11-5cf48b575d-mfwsv          Stopping container api
+10m         Warning   Unhealthy                 pod/hw11-5cf48b575d-mfwsv          Readiness probe failed: HTTP probe failed with statuscode: 503
+10m         Normal    Scheduled                 pod/hw11-5786bc85d6-mb5dp          Successfully assigned default/hw11-5786bc85d6-mb5dp to hw11-control-plane
+10m         Normal    Created                   pod/hw11-5786bc85d6-mb5dp          Container created
+10m         Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-mfwsv
+10m         Warning   Unhealthy                 pod/hw11-5cf48b575d-jm6vh          Readiness probe failed: HTTP probe failed with statuscode: 503
+10m         Normal    Killing                   pod/hw11-5cf48b575d-jm6vh          Stopping container api
+10m         Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-jm6vh
+10m         Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-5cf48b575d from 1 to 0
+10m         Warning   Unhealthy                 pod/hw11-5cf48b575d-mfwsv          Readiness probe failed: Get "http://10.244.0.28:8091/ready": dial tcp 10.244.0.28:8091: connect: connection refused
+10m         Warning   Unhealthy                 pod/hw11-5cf48b575d-jm6vh          Readiness probe failed: Get "http://10.244.0.29:8091/ready": dial tcp 10.244.0.29:8091: connect: connection refused
+10m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-lft52
+10m         Normal    Scheduled                 pod/hw11-5cf48b575d-lft52          Successfully assigned default/hw11-5cf48b575d-lft52 to hw11-control-plane
+10m         Normal    Pulled                    pod/hw11-5cf48b575d-lft52          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+10m         Normal    Created                   pod/hw11-5cf48b575d-lft52          Container created
+10m         Normal    Started                   pod/hw11-5cf48b575d-lft52          Container started
+10m         Warning   Unhealthy                 pod/hw11-5cf48b575d-lft52          Startup probe failed: HTTP probe failed with statuscode: 503
+10m         Normal    Created                   pod/hw11-5cf48b575d-4cwbw          Container created
+10m         Normal    SuccessfulCreate          replicaset/hw11-5cf48b575d         Created pod: hw11-5cf48b575d-4cwbw
+10m         Normal    Killing                   pod/hw11-5786bc85d6-z8d4l          Stopping container api
+10m         Normal    Scheduled                 pod/hw11-5cf48b575d-4cwbw          Successfully assigned default/hw11-5cf48b575d-4cwbw to hw11-control-plane
+10m         Normal    Pulled                    pod/hw11-5cf48b575d-4cwbw          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+10m         Normal    SuccessfulDelete          replicaset/hw11-5786bc85d6         Deleted pod: hw11-5786bc85d6-z8d4l
+10m         Normal    Started                   pod/hw11-5cf48b575d-4cwbw          Container started
+9m50s       Warning   Unhealthy                 pod/hw11-5cf48b575d-4cwbw          Startup probe failed: HTTP probe failed with statuscode: 503
+9m48s       Normal    SuccessfulDelete          replicaset/hw11-5786bc85d6         Deleted pod: hw11-5786bc85d6-mb5dp
+9m48s       Normal    Killing                   pod/hw11-5786bc85d6-mb5dp          Stopping container api
+8m35s       Normal    SuccessfulCreate          replicaset/hw11-77d75bdf79         Created pod: hw11-77d75bdf79-9xq72
+8m35s       Normal    Started                   pod/hw11-77d75bdf79-9xq72          Container started
+8m35s       Normal    Created                   pod/hw11-77d75bdf79-9xq72          Container created
+8m35s       Normal    Pulled                    pod/hw11-77d75bdf79-9xq72          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+8m35s       Normal    ScalingReplicaSet         deployment/hw11                    Scaled up replica set hw11-77d75bdf79 from 0 to 1
+8m35s       Normal    Scheduled                 pod/hw11-77d75bdf79-9xq72          Successfully assigned default/hw11-77d75bdf79-9xq72 to hw11-control-plane
+8m32s       Normal    SuccessfulCreate          replicaset/hw11-77d75bdf79         Created pod: hw11-77d75bdf79-z8crz
+8m32s       Normal    Scheduled                 pod/hw11-77d75bdf79-z8crz          Successfully assigned default/hw11-77d75bdf79-z8crz to hw11-control-plane
+8m32s       Normal    Killing                   pod/hw11-5cf48b575d-4cwbw          Stopping container api
+8m32s       Normal    Pulled                    pod/hw11-77d75bdf79-z8crz          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+8m32s       Normal    Created                   pod/hw11-77d75bdf79-z8crz          Container created
+8m32s       Normal    Started                   pod/hw11-77d75bdf79-z8crz          Container started
+8m32s       Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-4cwbw
+8m30s       Warning   Unhealthy                 pod/hw11-5cf48b575d-4cwbw          Readiness probe failed: HTTP probe failed with statuscode: 503
+8m29s       Normal    Killing                   pod/hw11-5cf48b575d-lft52          Stopping container api
+8m27s       Warning   Unhealthy                 pod/hw11-5cf48b575d-lft52          Readiness probe failed: HTTP probe failed with statuscode: 503
+8m29s       Normal    SuccessfulDelete          replicaset/hw11-5cf48b575d         Deleted pod: hw11-5cf48b575d-lft52
+8m28s       Warning   Unhealthy                 pod/hw11-5cf48b575d-4cwbw          Readiness probe failed: Get "http://10.244.0.34:8091/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+8m8s        Normal    SuccessfulCreate          replicaset/hw11-56c467d947         Created pod: hw11-56c467d947-gx2tr
+7m          Normal    Started                   pod/hw11-56c467d947-gx2tr          Container started
+7m          Normal    Created                   pod/hw11-56c467d947-gx2tr          Container created
+7m          Normal    Pulled                    pod/hw11-56c467d947-gx2tr          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+8m8s        Normal    Scheduled                 pod/hw11-56c467d947-gx2tr          Successfully assigned default/hw11-56c467d947-gx2tr to hw11-control-plane
+6m56s       Warning   Unhealthy                 pod/hw11-56c467d947-gx2tr          Startup probe failed: HTTP probe failed with statuscode: 503
+7m46s       Normal    Created                   pod/hw11-56c467d947-bkmrg          Container created
+7m46s       Normal    SuccessfulDelete          replicaset/hw11-77d75bdf79         Deleted pod: hw11-77d75bdf79-z8crz
+7m46s       Normal    Scheduled                 pod/hw11-56c467d947-bkmrg          Successfully assigned default/hw11-56c467d947-bkmrg to hw11-control-plane
+7m46s       Normal    Pulled                    pod/hw11-56c467d947-bkmrg          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+7m46s       Normal    Killing                   pod/hw11-77d75bdf79-z8crz          Stopping container api
+7m46s       Normal    Started                   pod/hw11-56c467d947-bkmrg          Container started
+7m46s       Normal    SuccessfulCreate          replicaset/hw11-56c467d947         Created pod: hw11-56c467d947-bkmrg
+7m26s       Warning   Unhealthy                 pod/hw11-56c467d947-bkmrg          Startup probe failed: HTTP probe failed with statuscode: 503
+7m42s       Warning   Unhealthy                 pod/hw11-77d75bdf79-z8crz          Readiness probe failed: Get "http://10.244.0.36:8091/health": dial tcp 10.244.0.36:8091: connect: connection refused
+7m24s       Normal    Pulled                    pod/hw11-56c467d947-j6vzw          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+7m24s       Normal    SuccessfulCreate          replicaset/hw11-56c467d947         Created pod: hw11-56c467d947-j6vzw
+7m24s       Normal    Killing                   pod/hw11-56c467d947-bkmrg          Stopping container api
+7m24s       Normal    SuccessfulDelete          replicaset/hw11-77d75bdf79         Deleted pod: hw11-77d75bdf79-9xq72
+7m24s       Normal    Killing                   pod/hw11-77d75bdf79-9xq72          Stopping container api
+7m24s       Normal    Scheduled                 pod/hw11-56c467d947-j6vzw          Successfully assigned default/hw11-56c467d947-j6vzw to hw11-control-plane
+7m24s       Normal    Created                   pod/hw11-56c467d947-j6vzw          Container created
+7m4s        Warning   Unhealthy                 pod/hw11-56c467d947-j6vzw          Startup probe failed: HTTP probe failed with statuscode: 503
+7m23s       Normal    Started                   pod/hw11-56c467d947-j6vzw          Container started
+7m20s       Warning   Unhealthy                 pod/hw11-56c467d947-bkmrg          Readiness probe failed: HTTP probe failed with statuscode: 503
+7m20s       Warning   Unhealthy                 pod/hw11-77d75bdf79-9xq72          Readiness probe failed: Get "http://10.244.0.35:8091/health": dial tcp 10.244.0.35:8091: connect: connection refused
+7m          Warning   Unhealthy                 pod/hw11-56c467d947-gx2tr          Startup probe failed: Get "http://10.244.0.37:8091/startup": dial tcp 10.244.0.37:8091: connect: connection refused
+5m52s       Normal    Created                   pod/hw11-56c467d947-lfqb5          Container created
+5m52s       Normal    Scheduled                 pod/hw11-56c467d947-lfqb5          Successfully assigned default/hw11-56c467d947-lfqb5 to hw11-control-plane
+5m52s       Normal    Pulled                    pod/hw11-56c467d947-lfqb5          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+5m52s       Normal    Started                   pod/hw11-56c467d947-lfqb5          Container started
+5m52s       Normal    SuccessfulCreate          replicaset/hw11-56c467d947         Created pod: hw11-56c467d947-lfqb5
+2m22s       Normal    SuccessfulRescale         horizontalpodautoscaler/hw11       New size: 3; reason: cpu resource utilization (percentage of request) above target
+5m32s       Warning   Unhealthy                 pod/hw11-56c467d947-lfqb5          Startup probe failed: HTTP probe failed with statuscode: 503
+3m37s       Normal    SuccessfulDelete          replicaset/hw11-56c467d947         Deleted pod: hw11-56c467d947-lfqb5
+7s          Normal    SuccessfulRescale         horizontalpodautoscaler/hw11       New size: 2; reason: All metrics below target
+3m37s       Normal    Killing                   pod/hw11-56c467d947-lfqb5          Stopping container api
+3m34s       Warning   Unhealthy                 pod/hw11-56c467d947-lfqb5          Readiness probe failed: HTTP probe failed with statuscode: 503
+3m33s       Warning   Unhealthy                 pod/hw11-56c467d947-lfqb5          Readiness probe failed: Get "http://10.244.0.40:8091/ready": dial tcp 10.244.0.40:8091: connect: connection refused
+2m22s       Normal    Started                   pod/hw11-56c467d947-cgvh7          Container started
+2m22s       Normal    Created                   pod/hw11-56c467d947-cgvh7          Container created
+2m22s       Normal    Pulled                    pod/hw11-56c467d947-cgvh7          Container image "hw11-api:1.0.0" already present on machine and can be accessed by the pod
+2m22s       Normal    Scheduled                 pod/hw11-56c467d947-cgvh7          Successfully assigned default/hw11-56c467d947-cgvh7 to hw11-control-plane
+2m22s       Normal    SuccessfulCreate          replicaset/hw11-56c467d947         Created pod: hw11-56c467d947-cgvh7
+2m2s        Warning   Unhealthy                 pod/hw11-56c467d947-cgvh7          Startup probe failed: HTTP probe failed with statuscode: 503
+7s          Normal    Killing                   pod/hw11-56c467d947-cgvh7          Stopping container api
+7s          Normal    ScalingReplicaSet         deployment/hw11                    Scaled down replica set hw11-56c467d947 from 3 to 2
+7s          Normal    SuccessfulDelete          replicaset/hw11-56c467d947         Deleted pod: hw11-56c467d947-cgvh7
+4s          Warning   Unhealthy                 pod/hw11-56c467d947-cgvh7          Readiness probe failed: HTTP probe failed with statuscode: 503
+3s          Warning   Unhealthy                 pod/hw11-56c467d947-cgvh7          Readiness probe failed: Get "http://10.244.0.41:8091/ready": dial tcp 10.244.0.41:8091: connect: connection refused

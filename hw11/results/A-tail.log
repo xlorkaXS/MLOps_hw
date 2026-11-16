@@ -1,0 +1,7 @@
+A-rollout-final 17 {'completed': 17}
+Traceback (most recent call last):
+  File "hw11/run.py", line 205, in <module>
+    globals()[ap.parse_args().phase.lower()]()
+  File "hw11/run.py", line 167, in a_tail
+    assert base_version["model_id"]=="sim-A"
+AssertionError

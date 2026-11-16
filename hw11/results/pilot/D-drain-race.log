@@ -1,0 +1,7 @@
+A-fixed-final 56 {'completed': 55, 'rejected': 1}
+Traceback (most recent call last):
+  File "hw11/operate.py", line 173, in <module>
+    globals()[p.parse_args().phase]()
+  File "hw11/operate.py", line 36, in verify
+    assert all(r["disposition"]=="completed" for r in rows)
+AssertionError

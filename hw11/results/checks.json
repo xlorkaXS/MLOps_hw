@@ -1,0 +1,204 @@
+{
+  "warmup_and_gating": true,
+  "rollback_version": true,
+  "replacement_version": true,
+  "accounting_abort": true,
+  "isolated_dialogues": true,
+  "evidence": {
+    "warmup_block": {
+      "body": {
+        "prompt": "Echo the submitted history",
+        "history": [
+          "FIRST-731"
+        ],
+        "session_id": "first",
+        "chunks": 2
+      },
+      "scheduled_monotonic": 2664.429811686,
+      "scheduled_s": 0.0,
+      "sent_monotonic": 2664.429834645,
+      "sent_s": 2.2959000034461496e-05,
+      "first_monotonic": null,
+      "end_monotonic": 2664.431418811,
+      "status": 503,
+      "pod": "hw11-56c467d947-j6vzw",
+      "model_id": "sim-A",
+      "request_id": "95a6e560bb7c4a66a19dcb6103c7cfc6",
+      "chunks_seen": 0,
+      "chunk_times": [],
+      "disposition": "rejected",
+      "send_delay_s": 2.2959000034461496e-05,
+      "end_s": 0.001607125000191445,
+      "total_s": 0.0015841660001569835
+    },
+    "replacement_before": {
+      "body": {
+        "prompt": "Echo the submitted history",
+        "history": [
+          "FIRST-731"
+        ],
+        "session_id": "first",
+        "chunks": 2
+      },
+      "scheduled_monotonic": 2662.852719019,
+      "scheduled_s": 0.0,
+      "sent_monotonic": 2662.852742477,
+      "sent_s": 2.3458000214304775e-05,
+      "first_monotonic": 2663.137445811,
+      "end_monotonic": 2663.237945519,
+      "status": 200,
+      "pod": "hw11-56c467d947-bkmrg",
+      "model_id": "sim-A",
+      "request_id": "e3802c2085784e948c3bba02150659d6",
+      "chunks_seen": 2,
+      "chunk_times": [
+        0.2847033339999143,
+        0.38510025100003986
+      ],
+      "disposition": "completed",
+      "send_delay_s": 2.3458000214304775e-05,
+      "ttfc_s": 0.2847033339999143,
+      "backend_mode": "simulated",
+      "queue_s": 0.002429374999792344,
+      "cache_hit": false,
+      "observed_text": "FIRST-731",
+      "server_seconds": 0.38349241699961567,
+      "end_s": 0.3852265000000443,
+      "total_s": 0.38520304199983
+    },
+    "replacement_after": {
+      "body": {
+        "prompt": "Echo the submitted history",
+        "history": [
+          "FIRST-731"
+        ],
+        "session_id": "first",
+        "chunks": 2
+      },
+      "scheduled_monotonic": 2685.580738488,
+      "scheduled_s": 0.0,
+      "sent_monotonic": 2685.580758447,
+      "sent_s": 1.995899992834893e-05,
+      "first_monotonic": 2685.864494905,
+      "end_monotonic": 2685.96549403,
+      "status": 200,
+      "pod": "hw11-56c467d947-j6vzw",
+      "model_id": "sim-A",
+      "request_id": "aaabc0c39cbc461f84ee730a270111b8",
+      "chunks_seen": 2,
+      "chunk_times": [
+        0.28373645800002123,
+        0.38468245800004297
+      ],
+      "disposition": "completed",
+      "send_delay_s": 1.995899992834893e-05,
+      "ttfc_s": 0.28373645800002123,
+      "backend_mode": "simulated",
+      "queue_s": 0.0019812909999927797,
+      "cache_hit": false,
+      "observed_text": "FIRST-731",
+      "server_seconds": 0.38371187499978987,
+      "end_s": 0.3847555420002209,
+      "total_s": 0.38473558300029254
+    },
+    "dialogue_other": {
+      "body": {
+        "prompt": "Echo the submitted history",
+        "history": [
+          "SECOND-982"
+        ],
+        "session_id": "second",
+        "chunks": 2
+      },
+      "scheduled_monotonic": 2686.05796403,
+      "scheduled_s": 0.0,
+      "sent_monotonic": 2686.057989322,
+      "sent_s": 2.5291999918408692e-05,
+      "first_monotonic": 2686.100341363,
+      "end_monotonic": 2686.20228278,
+      "status": 200,
+      "pod": "hw11-56c467d947-j6vzw",
+      "model_id": "sim-A",
+      "request_id": "3da85d8a8694499a906bf0c0b2be15de",
+      "chunks_seen": 2,
+      "chunk_times": [
+        0.04235204099995826,
+        0.14426554200008468
+      ],
+      "disposition": "completed",
+      "send_delay_s": 2.5291999918408692e-05,
+      "ttfc_s": 0.04235204099995826,
+      "backend_mode": "simulated",
+      "queue_s": 0.00020204200018270058,
+      "cache_hit": true,
+      "observed_text": "SECOND-982",
+      "server_seconds": 0.1431723340001554,
+      "end_s": 0.14431874999991123,
+      "total_s": 0.14429345799999282
+    },
+    "forced": {
+      "status": 200,
+      "pod": "hw11-56c467d947-gx2tr",
+      "model_id": "sim-A",
+      "request_id": "57da3e194bde4faaa9a2d675df45e187",
+      "sent_monotonic": 2686.306205197,
+      "phase": "D-forced",
+      "disposition": "aborted",
+      "chunks_seen": 1,
+      "first_monotonic": 2686.59034378,
+      "end_monotonic": 2686.730359405,
+      "packets": [
+        {
+          "request_id": "57da3e194bde4faaa9a2d675df45e187",
+          "session_id": "",
+          "pod": "hw11-56c467d947-gx2tr",
+          "model_id": "sim-A",
+          "backend_mode": "simulated",
+          "runtime_sha256": "9704bfeaf57d8b1b4b6ca271b8c2e26338550b9ecdc7f024b31cd54edf311bbf",
+          "kind": "chunk",
+          "chunk": 1,
+          "text": "force stop",
+          "queue_seconds": 0.00017283299985138,
+          "cache_hit": false,
+          "observed_monotonic": 2686.59034378
+        },
+        {
+          "kind": "eof",
+          "observed_monotonic": 2686.730359405
+        }
+      ],
+      "killed_epoch": 1794871030.903271
+    },
+    "after_force": {
+      "body": {
+        "prompt": "after recovery",
+        "chunks": 2
+      },
+      "scheduled_monotonic": 2709.037481541,
+      "scheduled_s": 0.0,
+      "sent_monotonic": 2709.037501041,
+      "sent_s": 1.9499999780236976e-05,
+      "first_monotonic": 2709.322131666,
+      "end_monotonic": 2709.42272425,
+      "status": 200,
+      "pod": "hw11-56c467d947-gx2tr",
+      "model_id": "sim-A",
+      "request_id": "2af5b0af8792430399420123514b0214",
+      "chunks_seen": 2,
+      "chunk_times": [
+        0.2846306250003181,
+        0.3851783750001232
+      ],
+      "disposition": "completed",
+      "send_delay_s": 1.9499999780236976e-05,
+      "ttfc_s": 0.2846306250003181,
+      "backend_mode": "simulated",
+      "queue_s": 0.00233429200034152,
+      "cache_hit": false,
+      "observed_text": "after recovery",
+      "server_seconds": 0.3838519170003565,
+      "end_s": 0.3852427090000674,
+      "total_s": 0.38522320900028717
+    }
+  }
+}

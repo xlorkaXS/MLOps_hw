@@ -1,0 +1,7 @@
+A-rollout-confirmed 17 {'completed': 17}
+Traceback (most recent call last):
+  File "hw11/run.py", line 205, in <module>
+    globals()[ap.parse_args().phase.lower()]()
+  File "hw11/run.py", line 159, in a_tail
+    assert long['disposition']=='completed' and long['model_id']=='sim-A'
+AssertionError

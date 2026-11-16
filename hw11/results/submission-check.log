@@ -1,0 +1,2 @@
+PASS: probes, rollout, rollback, forced failure, confinement, 12 schedules, HPA, 2 alerts, all charts.
+Requests: 7630 report sha256: f8b7c3e3d62722409275e77724c2a188e28abf7b00f04a2269d6e826d60eaf63

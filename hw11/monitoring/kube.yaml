@@ -1,0 +1,121 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata: {name: lab-monitor}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata: {name: hw11-monitor}
+rules:
+- apiGroups: [""]
+  resources: [pods, nodes]
+  verbs: [get, list, watch]
+- apiGroups: [""]
+  resources: [nodes/proxy]
+  verbs: [get]
+- apiGroups: [apps]
+  resources: [deployments]
+  verbs: [get, list, watch]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata: {name: hw11-monitor}
+roleRef: {apiGroup: rbac.authorization.k8s.io, kind: ClusterRole, name: hw11-monitor}
+subjects: [{kind: ServiceAccount, name: lab-monitor, namespace: default}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: prometheus}
+spec:
+  selector: {matchLabels: {app: prometheus}}
+  replicas: 1
+  template:
+    metadata: {labels: {app: prometheus}}
+    spec:
+      serviceAccountName: lab-monitor
+      securityContext: {fsGroup: 65534}
+      containers:
+      - name: prometheus
+        image: prom/prometheus:v3.5.0
+        args: ["--config.file=/config/prometheus.yml","--storage.tsdb.path=/prometheus","--storage.tsdb.retention.time=6h","--storage.tsdb.retention.size=180MB"]
+        ports: [{containerPort: 9090}]
+        resources:
+          requests: {cpu: 40m, memory: 80Mi}
+          limits: {cpu: 300m, memory: 350Mi}
+        volumeMounts: [{name: data, mountPath: /prometheus},{name: config, mountPath: /config}]
+      volumes:
+      - {name: data, emptyDir: {sizeLimit: 250Mi}}
+      - {name: config, configMap: {name: prometheus-config}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: prometheus}
+spec:
+  selector: {app: prometheus}
+  ports: [{port: 9090}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: kube-state}
+spec:
+  selector: {matchLabels: {app: kube-state}}
+  replicas: 1
+  template:
+    metadata: {labels: {app: kube-state}}
+    spec:
+      serviceAccountName: lab-monitor
+      containers:
+      - name: kube-state
+        image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0
+        args: ["--resources=deployments,pods","--namespaces=default"]
+        ports: [{containerPort: 8080}]
+        resources:
+          requests: {cpu: 15m, memory: 30Mi}
+          limits: {cpu: 100m, memory: 100Mi}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: kube-state}
+spec:
+  selector: {app: kube-state}
+  ports: [{port: 8080}]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: grafana}
+spec:
+  selector: {matchLabels: {app: grafana}}
+  replicas: 1
+  template:
+    metadata: {labels: {app: grafana}}
+    spec:
+      securityContext: {fsGroup: 472}
+      automountServiceAccountToken: false
+      containers:
+      - name: grafana
+        image: grafana/grafana:12.1.1
+        ports: [{containerPort: 3000}]
+        env:
+        - {name: GF_AUTH_ANONYMOUS_ENABLED, value: "true"}
+        - {name: GF_AUTH_ANONYMOUS_ORG_ROLE, value: Viewer}
+        - {name: GF_ANALYTICS_REPORTING_ENABLED, value: "false"}
+        - {name: GF_ANALYTICS_CHECK_FOR_UPDATES, value: "false"}
+        resources:
+          requests: {cpu: 35m, memory: 100Mi}
+          limits: {cpu: 300m, memory: 350Mi}
+        volumeMounts:
+        - {name: data, mountPath: /var/lib/grafana}
+        - {name: datasource, mountPath: /etc/grafana/provisioning/datasources}
+        - {name: provider, mountPath: /etc/grafana/provisioning/dashboards}
+        - {name: dashboard, mountPath: /dashboards}
+      volumes:
+      - {name: data, emptyDir: {sizeLimit: 100Mi}}
+      - {name: datasource, configMap: {name: grafana-source}}
+      - {name: provider, configMap: {name: grafana-provider}}
+      - {name: dashboard, configMap: {name: grafana-dashboard}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: grafana}
+spec:
+  selector: {app: grafana}
+  ports: [{port: 3000}]

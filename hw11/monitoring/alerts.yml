@@ -1,0 +1,18 @@
+groups:
+- name: hw11
+  rules:
+  - alert: SlowFirstChunk
+    expr: |
+      histogram_quantile(0.95, sum by (le)(rate(lab_ttfc_seconds_bucket[30s]))) > 0.9
+      and sum(increase(lab_ttfc_seconds_count[30s])) >= 12
+    for: 9s
+    labels: {severity: warning}
+    annotations: {summary: "p95 TTFC > 0.9 s, at least 12 completed responses per 30 s"}
+  - alert: TooManyRefusals
+    expr: |
+      sum(rate(lab_requests_total{outcome=~"rejected|unready"}[30s])) /
+      sum(rate(lab_requests_total[30s])) > 0.10
+      and sum(increase(lab_requests_total[30s])) >= 20
+    for: 9s
+    labels: {severity: warning}
+    annotations: {summary: "More than 10% refusals, at least 20 observations per 30 s"}
