@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 import release
+import journal
 
 
 def canonical(value):
@@ -59,26 +60,28 @@ def prepare(root):
         result=read(entry);print('CACHE_HIT',result['input_sha256']);return result
     payload=(root/'input.txt').read_bytes()
     result={'input_sha256':digest(payload),'rows':len(payload.splitlines()),'config':config}
-    write(entry,result);print('PREPARED',result['input_sha256']);return result
+    release.atomic_json(entry,result);print('PREPARED',result['input_sha256']);return result
 
 
-def run(root,report_name,fail_after_prepare=False):
+def run(root,report_name,fail_after_prepare=False,fail_after_pointer=False):
     prepared=prepare(root)
     if fail_after_prepare:raise RuntimeError('Инъекция сбоя после подготовки')
     manifest=read(root/'manifest-B.json');report=read(root/report_name)
-    release.publish(manifest,report,root/'accepted.json')
-    with (root/'publications.jsonl').open('a') as f:
-        f.write(json.dumps({'model_id':manifest['model_id'],'prepared':prepared['input_sha256']})+'\n')
-    print('PUBLISHED',manifest['model_id'])
+    release.verify_files(manifest,root)
+    state=journal.commit(root,manifest,report,fail_after_pointer=fail_after_pointer)
+    print(state,manifest['model_id'])
 
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--workspace',type=Path,default=Path('.lab'))
     sub=parser.add_subparsers(dest='command',required=True);sub.add_parser('init')
     run_parser=sub.add_parser('run');run_parser.add_argument('--report',default='report-B.json');run_parser.add_argument('--fail-after-prepare',action='store_true')
+    run_parser.add_argument('--fail-after-pointer',action='store_true')
+    sub.add_parser('rollback').add_argument('--to',required=True)
     args=parser.parse_args()
     if args.command=='init':initialize(args.workspace)
-    else:run(args.workspace,args.report,args.fail_after_prepare)
+    elif args.command=='rollback':journal.rollback(args.workspace,args.to,release.verify_files)
+    else:run(args.workspace,args.report,args.fail_after_prepare,args.fail_after_pointer)
 
 
 if __name__=='__main__':main()

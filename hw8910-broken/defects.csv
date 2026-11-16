@@ -1,8 +1,8 @@
 id,symptom,reproduce,expected,observed,root_cause,fix_commit,regression_test,before_log,after_log
-1,,,,,,,,,
-2,,,,,,,,,
-3,,,,,,,,,
-4,,,,,,,,,
-5,,,,,,,,,
-6,,,,,,,,,
-7,,,,,,,,,
+1,Старый кеш на изменённом файле,test_cache_survives_failure_and_tracks_bytes,После правки PREPARED,После правки CACHE_HIT,Ключ содержал только путь,Хеш входа и канонической конфигурации,test_cache_survives_failure_and_tracks_bytes,submission/before.log,submission/restored.log
+2,Неполный и чужой отчёты выпускались,test_incomplete_foreign_and_rejected_reports,Exit 1 и прежний указатель,Оба случая exit 0,Проверялась truthy-оценка единственного поля,Строгий тип PASS и привязка к полному отчёту,test_incomplete_foreign_and_rejected_reports,submission/before.log,submission/restored.log
+3,Запись не защищена от сбоя,test_atomic_write_error_preserves_pointer,Ошибка наружу и прежние байты,os.replace не вызван; ошибка не возникла,Прямая перезапись указателя,Временный файл и flush/fsync/os.replace,test_atomic_write_error_preserves_pointer,submission/before.log,submission/restored.log
+4,Два события на один выпуск,test_repeat_publication_in_new_process,Одно событие,Две строки журнала,Безусловный append,Release ID и атомарное восстановление журнала,test_repeat_publication_in_new_process,submission/before.log,submission/restored.log
+5,Ready до прогрева,test_http_readiness,503 до завершения,200 во время warmup,Ready был true при старте,Lifespan и явное завершение прогрева,test_http_readiness,submission/before.log,submission/restored.log
+6,Версия ответа не версия модели,test_http_loaded_version_and_rollback,Ответ A имеет ID A,Ответ A имеет ID B,Указатель с диска переписывал метаданные,Стартовый snapshot и контролируемый перезапуск,test_http_loaded_version_and_rollback,submission/before.log,submission/restored.log
+7,Невалидный запрос вызывает backend,test_http_bad_request_does_not_call_backend,4xx и прежний calls,200 и рост calls,Валидация не предшествовала генерации,Строгая схема и фиксированный лимит,test_http_bad_request_does_not_call_backend,submission/before.log,submission/restored.log

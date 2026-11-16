@@ -1,0 +1,15 @@
+MUTATION: path-only cache_key substituted for this process only
+test_changed_bytes_at_same_path_invalidate_cache (test_release.ReleaseContractTests.test_changed_bytes_at_same_path_invalidate_cache) ... FAIL
+
+======================================================================
+FAIL: test_changed_bytes_at_same_path_invalidate_cache (test_release.ReleaseContractTests.test_changed_bytes_at_same_path_invalidate_cache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_release.py", line 42, in test_changed_bytes_at_same_path_invalidate_cache
+    self.assertNotEqual(old,release.cache_key(self.data,self.config))
+AssertionError: '56c886a32879991301fbfcad96a254882d8c6ac84fd1222ff15fc0430d003401' == '56c886a32879991301fbfcad96a254882d8c6ac84fd1222ff15fc0430d003401'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

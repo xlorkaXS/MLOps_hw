@@ -1,0 +1,119 @@
+01:23:12.852 | INFO    | Flow run 'responsible-ammonite' - Beginning flow run 'responsible-ammonite' for flow 'hw8910-release'
+01:23:12.854 | INFO    | Flow run 'responsible-ammonite' - View at http://127.0.0.1:8420/runs/flow-run/1f3d1e4e-2cd9-43b3-8eb7-b80d937475c9
+01:23:12.876 | INFO    | Task run 'validate-input-221' - Finished in state Cached(type=COMPLETED)
+01:23:12.877 | INFO    | Flow run 'responsible-ammonite' - PREPARATION_STATE=Cached input_sha256=88bbd559a04a7a432693a1c611ef2704bb711ac17dd5e22203ee9e5020f59fd4
+01:23:12.878 | INFO    | Task run 'retrieve-verified-existing-artifact-411' - Existing artifact model-B.txt; no training
+01:23:12.878 | INFO    | Task run 'retrieve-verified-existing-artifact-411' - Finished in state Completed()
+01:23:12.880 | ERROR   | Task run 'verify-evaluation-and-gate-2e9' - Task run failed with exception: ValueError('Отчёт относится к другой версии или протоколу')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 94, in validate_release
+    raise ValueError('Отчёт относится к другой версии или протоколу')
+ValueError: Отчёт относится к другой версии или протоколу
+01:23:12.882 | ERROR   | Task run 'verify-evaluation-and-gate-2e9' - Finished in state Failed('Task run encountered an exception ValueError: Отчёт относится к другой версии или протоколу')
+01:23:13.862 | ERROR   | Flow run 'responsible-ammonite' - Encountered exception during execution: ValueError('Отчёт относится к другой версии или протоколу')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 989, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1634, in run_flow_sync
+    engine.call_flow_fn()
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1009, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 105, in release_flow
+    decision = assess(root, mode, manifest, report_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/tasks.py", line 1209, in __call__
+    return run_task(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1900, in run_task
+    return run_task_sync(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1675, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 611, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 94, in validate_release
+    raise ValueError('Отчёт относится к другой версии или протоколу')
+ValueError: Отчёт относится к другой версии или протоколу
+01:23:13.870 | INFO    | Flow run 'responsible-ammonite' - Finished in state Failed('Flow run encountered an exception: ValueError: Отчёт относится к другой версии или протоколу')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 126, in <module>
+    release_flow(a.workspace, a.mode, a.report, a.fail_after_prepare, a.fail_after_pointer)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flows.py", line 1850, in __call__
+    return run_flow(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1791, in run_flow
+    ret_val = run_flow_sync(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1636, in run_flow_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 539, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 989, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1634, in run_flow_sync
+    engine.call_flow_fn()
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1009, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 105, in release_flow
+    decision = assess(root, mode, manifest, report_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/tasks.py", line 1209, in __call__
+    return run_task(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1900, in run_task
+    return run_task_sync(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1675, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 611, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 94, in validate_release
+    raise ValueError('Отчёт относится к другой версии или протоколу')
+ValueError: Отчёт относится к другой версии или протоколу

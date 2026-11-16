@@ -1,0 +1,120 @@
+01:23:09.541 | INFO    | Flow run 'groovy-jaybird' - Beginning flow run 'groovy-jaybird' for flow 'hw8910-release'
+01:23:09.543 | INFO    | Flow run 'groovy-jaybird' - View at http://127.0.0.1:8420/runs/flow-run/b661fb56-a22d-4e5c-bcf3-6079a4c4fda6
+01:23:09.566 | INFO    | Task run 'validate-input-701' - PREPARED rows=50 input_sha256=6add6d4f667ecdcc070f1288e6f2b64c5c7e5b7797878aeeac5954d8c804822e
+01:23:09.567 | INFO    | Task run 'validate-input-701' - Finished in state Completed()
+01:23:09.568 | INFO    | Flow run 'groovy-jaybird' - PREPARATION_STATE=Completed input_sha256=6add6d4f667ecdcc070f1288e6f2b64c5c7e5b7797878aeeac5954d8c804822e
+01:23:10.145 | INFO    | Task run 'retrieve-verified-existing-artifact-cf4' - Existing artifact runs:/13588a225efa4f649fc1f93857be6cc8/model; no training
+01:23:10.146 | INFO    | Task run 'retrieve-verified-existing-artifact-cf4' - Finished in state Completed()
+01:23:12.320 | ERROR   | Task run 'verify-evaluation-and-gate-b27' - Task run failed with exception: ValueError('Кандидат отклонён или отчёт неполный')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 92, in validate_release
+    raise ValueError('Кандидат отклонён или отчёт неполный')
+ValueError: Кандидат отклонён или отчёт неполный
+01:23:12.322 | ERROR   | Task run 'verify-evaluation-and-gate-b27' - Finished in state Failed('Task run encountered an exception ValueError: Кандидат отклонён или отчёт неполный')
+01:23:12.561 | ERROR   | Flow run 'groovy-jaybird' - Encountered exception during execution: ValueError('Кандидат отклонён или отчёт неполный')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 989, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1634, in run_flow_sync
+    engine.call_flow_fn()
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1009, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 105, in release_flow
+    decision = assess(root, mode, manifest, report_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/tasks.py", line 1209, in __call__
+    return run_task(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1900, in run_task
+    return run_task_sync(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1675, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 611, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 92, in validate_release
+    raise ValueError('Кандидат отклонён или отчёт неполный')
+ValueError: Кандидат отклонён или отчёт неполный
+01:23:12.569 | INFO    | Flow run 'groovy-jaybird' - Finished in state Failed('Flow run encountered an exception: ValueError: Кандидат отклонён или отчёт неполный')
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 126, in <module>
+    release_flow(a.workspace, a.mode, a.report, a.fail_after_prepare, a.fail_after_pointer)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flows.py", line 1850, in __call__
+    return run_flow(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1791, in run_flow
+    ret_val = run_flow_sync(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1636, in run_flow_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 539, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 989, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1634, in run_flow_sync
+    engine.call_flow_fn()
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/flow_engine.py", line 1009, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 105, in release_flow
+    decision = assess(root, mode, manifest, report_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/tasks.py", line 1209, in __call__
+    return run_task(
+           ^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1900, in run_task
+    return run_task_sync(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1675, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 611, in result
+    raise self._raised
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1014, in run_context
+    yield self
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1673, in run_task_sync
+    engine.call_task_fn(txn)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/task_engine.py", line 1031, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/.venv/lib/python3.12/site-packages/prefect/utilities/callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/flow.py", line 66, in assess
+    release.validate_release(m, r)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/release.py", line 92, in validate_release
+    raise ValueError('Кандидат отклонён или отчёт неполный')
+ValueError: Кандидат отклонён или отчёт неполный

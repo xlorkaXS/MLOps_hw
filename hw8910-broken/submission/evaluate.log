@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 19688.60it/s]
+baseline {'n': 50, 'correct': 24, 'valid': 48, 'errors': 0, 'accuracy': 0.48, 'format_rate': 0.96} behavioral {'n': 3, 'correct': 1, 'valid': 3, 'errors': 0, 'accuracy': 0.3333333333333333, 'format_rate': 1.0}
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 30060.11it/s]
+candidate {'n': 50, 'correct': 19, 'valid': 50, 'errors': 0, 'accuracy': 0.38, 'format_rate': 1.0} behavioral {'n': 3, 'correct': 1, 'valid': 3, 'errors': 0, 'accuracy': 0.3333333333333333, 'format_rate': 1.0}
+Evaluation run: local-20261116T222106Z

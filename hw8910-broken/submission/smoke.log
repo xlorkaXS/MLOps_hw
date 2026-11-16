@@ -1,0 +1,25 @@
+[
+  {
+    "concurrency": 1,
+    "n": 8,
+    "successes": 8,
+    "errors": 0,
+    "batch_seconds": 1.6131017079969752,
+    "successes_per_second": 4.959389702670255,
+    "success_mean_seconds": 0.20157074987400847,
+    "success_max_seconds": 0.2195639579949784,
+    "generated_tokens": 51
+  },
+  {
+    "concurrency": 2,
+    "n": 8,
+    "successes": 8,
+    "errors": 0,
+    "batch_seconds": 1.5973477909938083,
+    "successes_per_second": 5.008301914652355,
+    "success_mean_seconds": 0.3754193854992991,
+    "success_max_seconds": 0.4166236669989303,
+    "generated_tokens": 51
+  }
+]
+Verified real API, restart, limits and baseline snapshot; server stopped.

@@ -1,0 +1,128 @@
+test_atomic_write_error_preserves_pointer (test_integration.Integration) ... FAIL
+test_cache_survives_failure_and_tracks_bytes (test_integration.Integration) ... FAIL
+test_http_bad_request_does_not_call_backend (test_integration.Integration) ... FAIL
+test_http_loaded_version_and_rollback (test_integration.Integration) ... FAIL
+test_http_readiness (test_integration.Integration) ... FAIL
+test_incomplete_foreign_and_rejected_reports (test_integration.Integration) ... test_repeat_publication_in_new_process (test_integration.Integration) ... FAIL
+
+======================================================================
+FAIL: test_atomic_write_error_preserves_pointer (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 108, in test_atomic_write_error_preserves_pointer
+    release.publish(m, r, self.pointer)
+AssertionError: OSError not raised
+
+======================================================================
+FAIL: test_cache_survives_failure_and_tracks_bytes (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 93, in test_cache_survives_failure_and_tracks_bytes
+    self.assertIn('PREPARED', changed.stdout)
+AssertionError: 'PREPARED' not found in 'CACHE_HIT 88bbd559a04a7a432693a1c611ef2704bb711ac17dd5e22203ee9e5020f59fd4\nPUBLISHED fixture-B\n'
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration) (prompt='', limit=32)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 153, in test_http_bad_request_does_not_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration) (prompt='x', limit=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 153, in test_http_bad_request_does_not_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration) (prompt='x', limit=100000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 153, in test_http_bad_request_does_not_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration) (prompt='x', limit='32')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 153, in test_http_bad_request_does_not_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration) (prompt='x', limit=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 153, in test_http_bad_request_does_not_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_http_bad_request_does_not_call_backend (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 154, in test_http_bad_request_does_not_call_backend
+    self.assertEqual(self.call('/debug')[1]['calls'], before)
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_http_loaded_version_and_rollback (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 135, in test_http_loaded_version_and_rollback
+    self.assertEqual(old['model_id'], 'fixture-A')
+AssertionError: 'fixture-B' != 'fixture-A'
+- fixture-B
+?         ^
++ fixture-A
+?         ^
+
+
+======================================================================
+FAIL: test_http_readiness (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 121, in test_http_readiness
+    self.assertEqual(self.call('/ready')[0], 503)
+AssertionError: 200 != 503
+
+======================================================================
+FAIL: test_incomplete_foreign_and_rejected_reports (test_integration.Integration) (report='report-incomplete.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 100, in test_incomplete_foreign_and_rejected_reports
+    self.lab('run', '--report', name, ok=False)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 36, in lab
+    self.assertEqual(p.returncode == 0, ok, p.stdout + p.stderr)
+AssertionError: True != False : CACHE_HIT 88bbd559a04a7a432693a1c611ef2704bb711ac17dd5e22203ee9e5020f59fd4
+PUBLISHED fixture-B
+
+
+======================================================================
+FAIL: test_incomplete_foreign_and_rejected_reports (test_integration.Integration) (report='report-A.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 100, in test_incomplete_foreign_and_rejected_reports
+    self.lab('run', '--report', name, ok=False)
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 36, in lab
+    self.assertEqual(p.returncode == 0, ok, p.stdout + p.stderr)
+AssertionError: True != False : CACHE_HIT 88bbd559a04a7a432693a1c611ef2704bb711ac17dd5e22203ee9e5020f59fd4
+PUBLISHED fixture-B
+
+
+======================================================================
+FAIL: test_repeat_publication_in_new_process (test_integration.Integration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/surik/Documents/VUZ/MLOps/hw/hw8910-broken/tests/test_integration.py", line 117, in test_repeat_publication_in_new_process
+    self.assertEqual(len((self.root / 'publications.jsonl').read_text().splitlines()), 1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.636s
+
+FAILED (failures=13)

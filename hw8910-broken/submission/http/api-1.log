@@ -1,0 +1,37 @@
+INFO:     Started server process [9345]
+INFO:     Waiting for application startup.
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 21507.48it/s]
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:53117 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53264 - "GET /ready HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:53267 - "GET /ready HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:53270 - "GET /ready HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:53273 - "GET /ready HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:53276 - "GET /ready HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:53280 - "GET /ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53281 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53282 - "POST /generate HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53283 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53285 - "GET /ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53286 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53287 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53292 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53293 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53294 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53295 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53296 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53298 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53299 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53300 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53302 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53306 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53307 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53308 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53309 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53310 - "POST /generate HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9345]
+/Users/surik/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
